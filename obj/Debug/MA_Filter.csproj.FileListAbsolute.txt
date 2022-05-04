@@ -1,0 +1,16 @@
+E:\Diablo\MA_Filter\bin\Debug\MA_Filter.exe.config
+E:\Diablo\MA_Filter\bin\Debug\MA_Filter.exe
+E:\Diablo\MA_Filter\bin\Debug\MA_Filter.pdb
+E:\Diablo\MA_Filter\obj\Debug\MA_Filter.csproj.AssemblyReference.cache
+E:\Diablo\MA_Filter\obj\Debug\MA_Filter.csproj.SuggestedBindingRedirects.cache
+E:\Diablo\MA_Filter\obj\Debug\MA_Filter.Form1.resources
+E:\Diablo\MA_Filter\obj\Debug\MA_Filter.Properties.Resources.resources
+E:\Diablo\MA_Filter\obj\Debug\MA_Filter.csproj.GenerateResource.cache
+E:\Diablo\MA_Filter\obj\Debug\MA_Filter.csproj.CoreCompileInputs.cache
+E:\Diablo\MA_Filter\obj\Debug\MA_Filter.exe
+E:\Diablo\MA_Filter\obj\Debug\MA_Filter.pdb
+E:\Diablo\MA_Filter\bin\Debug\Newtonsoft.Json.dll
+E:\Diablo\MA_Filter\bin\Debug\YamlDotNet.dll
+E:\Diablo\MA_Filter\bin\Debug\Newtonsoft.Json.xml
+E:\Diablo\MA_Filter\bin\Debug\YamlDotNet.xml
+E:\Diablo\MA_Filter\obj\Debug\MA_Filter.csproj.CopyComplete
