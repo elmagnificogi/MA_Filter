@@ -73,7 +73,6 @@
     <Compile Include="Skill.cs" />
     <Compile Include="Stats.cs" />
     <Compile Include="YamlConverters.cs" />
-    <Compile Include="YamlSkip.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

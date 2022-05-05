@@ -71,9 +71,9 @@ namespace MA_Filter
             StreamWriter yamlWriter = File.CreateText(file);
             Serializer yamlSerializer = new Serializer();
             //var s = new SerializerBuilder().WithObjectGraphTraversalStrategyFactory( new DefaultExclusiveObjectGraphVisitor()).Build();
-            var serializer1 = new SerializerBuilder().WithNamingConvention(new CamelCaseNamingConvention())
-                .WithEmissionPhaseObjectGraphVisitor(args => new YamlIEnumerableSkipEmptyObjectGraphVisitor(args.InnerVisitor))
-                .Build();
+            //var serializer1 = new SerializerBuilder().WithNamingConvention(new CamelCaseNamingConvention())
+            //    .WithEmissionPhaseObjectGraphVisitor(args => new YamlIEnumerableSkipEmptyObjectGraphVisitor(args.InnerVisitor))
+            //    .Build();
             yamlSerializer.Serialize(yamlWriter, sumRules);
             yamlWriter.Close();
 
@@ -102,14 +102,13 @@ namespace MA_Filter
             listBox1.Items.Clear();
             Item curItem = Items.ItemClassesToChinese.First(q => q.Value == comboBox1.SelectedItem.ToString()).Key;
 
-            // add a global filter
-            if(curItem < Item.ClassRings)
-            {
-                listBox1.Items.Add(curItem);
-            }
+            //// add a global filter
+            //if(curItem < Item.ClassRings)
+            //{
+            //    listBox1.Items.Add(curItem);
+            //}
 
             Item[] items = Items.ItemClasses[curItem];
-            
             foreach(var item in items)
             {
                 string key = Items._ItemCodes[(uint)item];
@@ -193,23 +192,23 @@ namespace MA_Filter
             comboBox11.Items.Clear();
             Item curItem;
             Item curClass;
-            if (comboBox1.SelectedIndex<32)
-            {
-                curClass = Items.ItemClassesToChinese.First(q => q.Value == comboBox1.SelectedItem.ToString()).Key;
-                if(listBox1.SelectedIndex == 0)
-                {
-                    curItem = (Item)((uint)Item.ClassAxes + comboBox1.SelectedIndex);
-                }
-                else
-                {
-                    curItem = Items.ItemClasses[curClass][listBox1.SelectedIndex];
-                }
-            }
-            else
-            {
+            //if (comboBox1.SelectedIndex<32)
+            //{
+            //    curClass = Items.ItemClassesToChinese.First(q => q.Value == comboBox1.SelectedItem.ToString()).Key;
+            //    if(listBox1.SelectedIndex == 0)
+            //    {
+            //        curItem = (Item)((uint)Item.ClassAxes + comboBox1.SelectedIndex);
+            //    }
+            //    else
+            //    {
+            //        curItem = Items.ItemClasses[curClass][listBox1.SelectedIndex];
+            //    }
+            //}
+            //else
+            //{
                 curClass = Items.ItemClassesToChinese.First(q => q.Value == comboBox1.SelectedItem.ToString()).Key;
                 curItem = Items.ItemClasses[curClass][listBox1.SelectedIndex];
-            }
+            //}
 
             curSelectItem = curItem;
             if (sumRules.ContainsKey(curSelectItem))
