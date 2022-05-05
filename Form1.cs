@@ -49,6 +49,34 @@ namespace MA_Filter
 
             checkBox1.Checked = false;
             comboBox2.SelectedIndex = -1;
+
+            List<ComboBox> affix_combox = new List<ComboBox>
+            {
+                comboBox4,comboBox8,comboBox9,comboBox6,comboBox3,comboBox5,comboBox7
+            };
+            List<TextBox> affix_combox_value = new List<TextBox>
+            {
+                textBox1,textBox2,textBox3,textBox5,textBox4,textBox7,textBox6
+            };
+
+            List<CheckBox> affix_check = new List<CheckBox>
+            {
+                checkBox5,checkBox6,checkBox7,checkBox8,checkBox11,checkBox10,checkBox9
+            };
+
+            foreach(var ui in affix_combox)
+            {
+                ui.SelectedIndex = -1;
+            }
+            foreach (var ui in affix_combox_value)
+            {
+                ui.Text = "";
+            }
+            foreach (var ui in affix_check)
+            {
+                ui.Checked = false;
+            }
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -82,8 +110,11 @@ namespace MA_Filter
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // load all json file
+            Localization.LoadLocalizationFile();
+
             // add all class data to ui
-            foreach(var item in Items.ItemClassesToChinese)
+            foreach (var item in Items.ItemClassesToChinese)
             {
                 comboBox1.Items.Add(item.Value);
             }
@@ -95,11 +126,41 @@ namespace MA_Filter
                 comboBox8.Items.Add(item.Value);
                 comboBox9.Items.Add(item.Value);
             }
-            
-            // add all skill
 
-            // load all json file
-            Localization.LoadLocalizationFile();
+            foreach (var item in Affix.SkillAffix)
+            {
+                comboBox6.Items.Add(item.Key);
+                comboBox3.Items.Add(item.Key);
+                comboBox5.Items.Add(item.Key);
+                comboBox7.Items.Add(item.Key);
+            }
+
+            // add all skill
+            int count = 0;
+            foreach (var skill in Enum.GetValues(typeof(Skill)))
+            {
+                if (skill.ToString().Equals(Skill.Unset.ToString()))
+                    continue;
+                if (skill.ToString().Equals(Skill.Any.ToString()))
+                    continue;
+
+                // translate skill is not enough,only 205,in fact is 210
+                string skillName = skill.ToString();
+                string localName = string.Concat(skillName.Select((x, j) => j > 0 && char.IsUpper(x) ? " " + x.ToString() : x.ToString()));
+                LocalizedObj chinese = Affix.LocalizedSkills.FirstOrDefault(x => x.Value.enUS.Equals(localName)).Value;
+                if (chinese != null)
+                {
+                    Debug.WriteLine(chinese.zhTW);
+                    count++;
+                    comboBox6.Items.Add(chinese.zhTW);
+                    comboBox3.Items.Add(chinese.zhTW);
+                    comboBox5.Items.Add(chinese.zhTW);
+                    comboBox7.Items.Add(chinese.zhTW);
+                    comboBox10.Items.Add(chinese.zhTW);
+                    Affix.SkillAffix.Add(chinese.zhTW, skillName);
+                }
+            }
+            Debug.WriteLine(count);
 
         }
 
@@ -147,6 +208,8 @@ namespace MA_Filter
 
         private void button2_Click(object sender, EventArgs e)
         {
+            curItemFilter = new ItemFilter();
+
             if (comboBox11.SelectedIndex == -1)
             {
                 MessageBox.Show("请先添加规则");
@@ -205,42 +268,111 @@ namespace MA_Filter
                 }
             }
 
-            if(comboBox4.SelectedIndex != -1)
-            {
-                string affix = Affix.ItemAffix.First(q => q.Value == comboBox4.SelectedItem.ToString()).Key;
-                if(textBox1.Text.Trim() == "")
+            if (checkBox5.Checked)
+                if (comboBox4.SelectedIndex != -1)
                 {
-                    MessageBox.Show("词缀必须填数值");
-                    return;
+                    string affix = Affix.ItemAffix.First(q => q.Value == comboBox4.SelectedItem.ToString()).Key;
+                    if(textBox1.Text.Trim() == "")
+                    {
+                        MessageBox.Show("词缀必须填数值");
+                        return;
+                    }
+                    curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter,int.Parse(textBox1.Text));
                 }
-                curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter,int.Parse(textBox1.Text));
-            }
 
-            if (comboBox8.SelectedIndex != -1)
-            {
-                string affix = Affix.ItemAffix.First(q => q.Value == comboBox8.SelectedItem.ToString()).Key;
-                if (textBox2.Text.Trim() == "")
+            if (checkBox6.Checked)
+                if (comboBox8.SelectedIndex != -1)
                 {
-                    MessageBox.Show("词缀必须填数值");
-                    return;
+                    string affix = Affix.ItemAffix.First(q => q.Value == comboBox8.SelectedItem.ToString()).Key;
+                    if (textBox2.Text.Trim() == "")
+                    {
+                        MessageBox.Show("词缀必须填数值");
+                        return;
+                    }
+                    curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter, int.Parse(textBox2.Text));
                 }
-                curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter, int.Parse(textBox2.Text));
-            }
 
-            if (comboBox9.SelectedIndex != -1)
-            {
-                string affix = Affix.ItemAffix.First(q => q.Value == comboBox9.SelectedItem.ToString()).Key;
-                if (textBox3.Text.Trim() == "")
+            if (checkBox7.Checked)
+                if (comboBox9.SelectedIndex != -1)
                 {
-                    MessageBox.Show("词缀必须填数值");
-                    return;
+                    string affix = Affix.ItemAffix.First(q => q.Value == comboBox9.SelectedItem.ToString()).Key;
+                    if (textBox3.Text.Trim() == "")
+                    {
+                        MessageBox.Show("词缀必须填数值");
+                        return;
+                    }
+                    curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter, int.Parse(textBox3.Text));
                 }
-                curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter, int.Parse(textBox3.Text));
-            }
+
+            // reset all
+            curItemFilter.ClassSkills.Clear();
+            curItemFilter.SkillTrees.Clear();
+            curItemFilter.Skills.Clear();
+
+            if(checkBox8.Checked)
+                if (!addSkillFromUI(comboBox6, textBox5, ref curItemFilter))
+                    return;
+            if (checkBox11.Checked)
+                if (!addSkillFromUI(comboBox3, textBox4, ref curItemFilter))
+                    return;
+            if(checkBox10.Checked)
+                if (!addSkillFromUI(comboBox5, textBox7, ref curItemFilter))
+                    return;
+            if(checkBox9.Checked)
+                if (!addSkillFromUI(comboBox7, textBox6, ref curItemFilter))
+                    return;
+
+            if(checkBox4.Checked)
+                if (comboBox10.SelectedIndex != -1)
+                {
+                    // normal skill
+                    // skill tree
+                    string name = Affix.SkillAffix.First(q => q.Key == comboBox10.SelectedItem.ToString()).Value;
+                    Skill playerClass = (Skill)Enum.Parse(typeof(Skill), name);
+                    curItemFilter.SkillCharges.Add(playerClass, 1);
+                }
+
 
             curItemFilters[comboBox11.SelectedIndex] = curItemFilter;
             sumRules[curSelectItem] = curItemFilters;
         }
+
+        private bool addSkillFromUI(ComboBox comboBox,TextBox textBox,ref ItemFilter itemFilter)
+        {
+            if (comboBox.SelectedIndex != -1)
+            {
+                if (textBox.Text.Trim() == "")
+                {
+                    MessageBox.Show("技能必须填数值");
+                    return false;
+                }
+                if (comboBox.SelectedItem.ToString().Contains("_"))
+                {
+                    // class skill
+                    string name = Affix.SkillAffix.First(q => q.Key == comboBox.SelectedItem.ToString()).Value;
+                    PlayerClass playerClass = (PlayerClass)Enum.Parse(typeof(PlayerClass), name);
+                    itemFilter.ClassSkills.Add(playerClass, int.Parse(textBox.Text));
+                }
+                else if (comboBox.SelectedItem.ToString().Contains("-"))
+                {
+                    // skill tree
+                    string name = Affix.SkillAffix.First(q => q.Key == comboBox.SelectedItem.ToString()).Value;
+                    SkillTree playerClass = (SkillTree)Enum.Parse(typeof(SkillTree), name);
+                    itemFilter.SkillTrees.Add(playerClass, int.Parse(textBox.Text));
+                }
+                else
+                {
+                    // normal skill
+                    // skill tree
+                    string name = Affix.SkillAffix.First(q => q.Key == comboBox.SelectedItem.ToString()).Value;
+                    Skill playerClass = (Skill)Enum.Parse(typeof(Skill), name);
+                    itemFilter.Skills.Add(playerClass, int.Parse(textBox.Text));
+                }
+            }
+
+            return true;
+        }
+
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -339,7 +471,12 @@ namespace MA_Filter
             };
             List<TextBox> affix_combox_value = new List<TextBox>
             {
-                textBox1,textBox2,textBox3,textBox6
+                textBox1,textBox2,textBox3
+            };
+
+            List<CheckBox> affix_check = new List<CheckBox>
+            {
+                checkBox5,checkBox6,checkBox7
             };
 
             int count = 0;
@@ -350,10 +487,52 @@ namespace MA_Filter
                     if (affix.GetValue(curItemFilter, null) == null)
                         continue;
                     affix_combox[count].SelectedIndex = comboBox4.Items.IndexOf(Affix.ItemAffix[affix.Name]);
-                    affix_combox_value[count++].Text = (affix.GetValue(curItemFilter, null)).ToString();
+                    affix_combox_value[count].Text = (affix.GetValue(curItemFilter, null)).ToString();
+                    affix_check[count++].Checked = true;
                 }
             }
 
+            affix_combox = new List<ComboBox>
+            {
+                comboBox6,comboBox3,comboBox5,comboBox7
+            };
+            affix_combox_value = new List<TextBox>
+            {
+                textBox5,textBox4,textBox7,textBox6
+            };
+
+            affix_check = new List<CheckBox>
+            {
+                checkBox8,checkBox11,checkBox10,checkBox9
+            };
+
+            count = 0;
+            foreach (var affix in curItemFilter.ClassSkills)
+            {
+                affix_combox[count].SelectedIndex = comboBox6.Items.IndexOf(Affix.SkillAffix.First(x => x.Value.Equals(affix.Key.ToString())).Key.ToString());//;
+                affix_combox_value[count].Text = affix.Value.ToString();
+                affix_check[count++].Checked = true;
+            }
+
+            foreach (var affix in curItemFilter.SkillTrees)
+            {
+                affix_combox[count].SelectedIndex = comboBox6.Items.IndexOf(Affix.SkillAffix.First(x => x.Value.Equals(affix.Key.ToString())).Key.ToString());//;
+                affix_combox_value[count].Text = affix.Value.ToString();
+                affix_check[count++].Checked = true;
+            }
+
+            foreach (var affix in curItemFilter.Skills)
+            {
+                affix_combox[count].SelectedIndex = comboBox6.Items.IndexOf(Affix.SkillAffix.First(x => x.Value.Equals(affix.Key.ToString())).Key.ToString());//;
+                affix_combox_value[count].Text = affix.Value.ToString();
+                affix_check[count++].Checked = true;
+            }
+
+            if(curItemFilter.SkillCharges.Count> 0)
+            {
+                comboBox10.SelectedIndex = comboBox10.Items.IndexOf(Affix.SkillAffix.First(x => x.Value.Equals(curItemFilter.SkillCharges.First().Key.ToString())).Key.ToString());//;
+                checkBox4.Checked = true;
+            }
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -437,6 +616,11 @@ namespace MA_Filter
                     e.Handled = true;
                 }
             }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+           resetUI();
         }
     }
 }

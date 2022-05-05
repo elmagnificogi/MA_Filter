@@ -1,4 +1,5 @@
-﻿using MapAssist.Types;
+﻿using MA_Filter;
+using MapAssist.Types;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
@@ -26,6 +27,23 @@ namespace MapAssist.Helpers
             {
                 Items.LocalizedItems.Add(item.Key, item);
             }
+            
+            // add skill 
+            resString = MA_Filter.Properties.Resources.skills;
+
+            using (var Stream = new MemoryStream(resString))
+            {
+                using (var streamReader = new StreamReader(Stream))
+                {
+                    var jsonString = streamReader.ReadToEnd();
+                    _localization = JsonConvert.DeserializeObject<LocalizationFileObj>(jsonString);
+                }
+            }
+
+            foreach (var item in _localization.Skills)
+            {
+                Affix.LocalizedSkills.Add(item.Key, item);
+            }
         }
     }
 
@@ -36,6 +54,7 @@ namespace MapAssist.Helpers
         public List<LocalizedObj> Npcs = new List<LocalizedObj>();
         public List<LocalizedObj> Shrines = new List<LocalizedObj>();
         public List<LocalizedObj> Monsters = new List<LocalizedObj>();
+        public List<LocalizedObj> Skills = new List<LocalizedObj>();
     }
 
     public class LocalizedObj

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MapAssist.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -68,6 +69,40 @@ namespace MA_Filter
                ["MinPlayerLevel"                 ]="最小玩家等级",
                ["MaxPlayerLevel"                 ]="最大玩家等级",
         };
+
+        static public Dictionary<string, string> SkillAffix = new Dictionary<string, string>()
+        {
+            ["亚马逊_全技能"] = "Amazon",
+            ["法师_全技能"] = "Sorceress",
+            ["死灵_全技能"] = "Necromancer",
+            ["骑士_全技能"] = "Paladin",
+            ["野蛮人_全技能"] = "Barbarian",
+            ["德鲁伊_全技能"] = "Druid",
+            ["刺客_全技能"] = "Assassin",
+            ["亚-弓與弩"] = "AmazonBowAndCrossbow",
+            ["亚-被動與魔法"] = "AmazonPassiveAndMagic",
+            ["亚-標槍與長矛"] = "AmazonJavelinAndSpear",
+            ["法-冰寒法術"] = "SorceressCold",
+            ["法-閃電法術"] = "SorceressLightning",
+            ["法-火焰法術"] = "SorceressFire",
+            ["死-召喚法術"] = "NecromancerSummoning",
+            ["死-毒素與骸骨法術"] = "NecromancerPoisonAndBone",
+            ["死-詛咒"] = "NecromancerCurses",
+            ["骑-防禦靈氣"] = "PaladinDefensiveAuras",
+            ["骑-攻擊靈氣"] = "PaladinOffensiveAuras",
+            ["骑-戰鬥技能"] = "PaladinCombatSkills",
+            ["野-戰鬥技能"] = "BarbarianCombatSkills",
+            ["野-戰鬥專精"] = "BarbarianMasteries",
+            ["野-戰吼"] = "BarbarianWarcries",
+            ["德-召喚法術"] = "DruidSummoning",
+            ["德-變形技能"] = "DruidShapeShifting",
+            ["德-元素法術"] = "DruidElemental",
+            ["刺-陷阱"] = "AssassinTraps",
+            ["刺-暗影修行"] = "AssassinShadowDisciplines",
+            ["刺-武學技藝"] = "AssassinMartialArts",
+        };
+
+        public static Dictionary<string, LocalizedObj> LocalizedSkills= new Dictionary<string, LocalizedObj>();
     }
 
 }
