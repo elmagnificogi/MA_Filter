@@ -63,6 +63,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemAffix.cs" />
     <Compile Include="Items.cs" />
     <Compile Include="Localization.cs" />
     <Compile Include="LootLogConfiguration.cs" />

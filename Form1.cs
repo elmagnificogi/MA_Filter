@@ -88,9 +88,16 @@ namespace MA_Filter
                 comboBox1.Items.Add(item.Value);
             }
 
+            // add all affix
+            foreach(var item in Affix.ItemAffix)
+            {
+                comboBox4.Items.Add(item.Value);
+                comboBox8.Items.Add(item.Value);
+                comboBox9.Items.Add(item.Value);
+                comboBox10.Items.Add(item.Value);
+            }
+            
             // add all skill
-
-            // add all affix stats
 
             // load all json file
             Localization.LoadLocalizationFile();
@@ -155,6 +162,11 @@ namespace MA_Filter
 
             if (checkBox1.Checked)
             {
+                if (comboBox2.SelectedIndex == -1)
+                {
+                    MessageBox.Show("有形无形必须选一种");
+                    return;
+                }
                 if (comboBox2.SelectedIndex == 0)
                     curItemFilter.Ethereal = false;
                 if (comboBox2.SelectedIndex == 1)
@@ -163,6 +175,11 @@ namespace MA_Filter
 
             if(checkBox2.Checked)
             {
+                if (checkedListBox2.CheckedItems.Count == 0)
+                {
+                    MessageBox.Show("必须选一个孔数");
+                    return;
+                }
                 curItemFilter.Sockets = new int[checkedListBox2.CheckedItems.Count];
                 int index = 0;
                 for(int i = 0; i < checkedListBox2.Items.Count; i++)
@@ -174,6 +191,12 @@ namespace MA_Filter
 
             if (checkBox3.Checked)
             {
+                if(checkedListBox1.CheckedItems.Count==0)
+                {
+                    MessageBox.Show("必须选一个质量");
+                    return;
+                }
+
                 curItemFilter.Qualities = new ItemQuality[checkedListBox1.CheckedItems.Count];
                 int index = 0;
                 for (int i = 0; i < checkedListBox1.Items.Count; i++)
@@ -181,6 +204,50 @@ namespace MA_Filter
                     if (checkedListBox1.GetItemChecked(i))
                         curItemFilter.Qualities[index++] = (ItemQuality)(i +2);
                 }
+            }
+
+            if(comboBox4.SelectedIndex != -1)
+            {
+                string affix = Affix.ItemAffix.First(q => q.Value == comboBox4.SelectedItem.ToString()).Key;
+                if(textBox1.Text.Trim() == "")
+                {
+                    MessageBox.Show("词缀必须填数值");
+                    return;
+                }
+                curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter,int.Parse(textBox1.Text));
+            }
+
+            if (comboBox8.SelectedIndex != -1)
+            {
+                string affix = Affix.ItemAffix.First(q => q.Value == comboBox8.SelectedItem.ToString()).Key;
+                if (textBox2.Text.Trim() == "")
+                {
+                    MessageBox.Show("词缀必须填数值");
+                    return;
+                }
+                curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter, int.Parse(textBox2.Text));
+            }
+
+            if (comboBox9.SelectedIndex != -1)
+            {
+                string affix = Affix.ItemAffix.First(q => q.Value == comboBox9.SelectedItem.ToString()).Key;
+                if (textBox3.Text.Trim() == "")
+                {
+                    MessageBox.Show("词缀必须填数值");
+                    return;
+                }
+                curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter, int.Parse(textBox3.Text));
+            }
+
+            if (comboBox10.SelectedIndex != -1)
+            {
+                string affix = Affix.ItemAffix.First(q => q.Value == comboBox10.SelectedItem.ToString()).Key;
+                if (textBox6.Text.Trim() == "")
+                {
+                    MessageBox.Show("词缀必须填数值");
+                    return;
+                }
+                curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter, int.Parse(textBox6.Text));
             }
 
             curItemFilters[comboBox11.SelectedIndex] = curItemFilter;
@@ -278,6 +345,27 @@ namespace MA_Filter
                 }
             }
 
+            List<ComboBox> affix_combox = new List<ComboBox>
+            {
+                comboBox4,comboBox8,comboBox9,comboBox10
+            };
+            List<TextBox> affix_combox_value = new List<TextBox>
+            {
+                textBox1,textBox2,textBox3,textBox6
+            };
+
+            int count = 0;
+            foreach (var affix in curItemFilter.GetType().GetProperties())
+            {
+                if(Affix.ItemAffix.ContainsKey(affix.Name))
+                {
+                    if (affix.GetValue(curItemFilter, null) == null)
+                        continue;
+                    affix_combox[count].SelectedIndex = comboBox4.Items.IndexOf(Affix.ItemAffix[affix.Name]);
+                    affix_combox_value[count++].Text = (affix.GetValue(curItemFilter, null)).ToString();
+                }
+            }
+
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -306,6 +394,61 @@ namespace MA_Filter
 
             comboBox11.Items.RemoveAt(comboBox11.SelectedIndex);
             label2.Text = "规则个数：" + curItemFilters.Count;
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')//这是允许输入退格键
+            {
+                if ((e.KeyChar < '0') || (e.KeyChar > '9'))//这是允许输入0-9数字
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')//这是允许输入退格键
+            {
+                if ((e.KeyChar < '0') || (e.KeyChar > '9'))//这是允许输入0-9数字
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')//这是允许输入退格键
+            {
+                if ((e.KeyChar < '0') || (e.KeyChar > '9'))//这是允许输入0-9数字
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')//这是允许输入退格键
+            {
+                if ((e.KeyChar < '0') || (e.KeyChar > '9'))//这是允许输入0-9数字
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')//这是允许输入退格键
+            {
+                if ((e.KeyChar < '0') || (e.KeyChar > '9'))//这是允许输入0-9数字
+                {
+                    e.Handled = true;
+                }
+            }
         }
     }
 }
