@@ -34741,7 +34741,7 @@
       "id": 10902,
       "Key": "r16",
       "enUS": "Io Rune",
-      "zhTW": "符文：埃歐",
+      "zhTW": "符文16：埃歐",
       "deDE": "[fs]Io-Rune",
       "esES": "Runa Io",
       "frFR": "[fs]Rune Io",
@@ -34752,13 +34752,13 @@
       "jaJP": "イオ・ルーン",
       "ptBR": "Runa Io",
       "ruRU": "Руна Ио",
-      "zhCN": "艾欧符文"
+      "zhCN": "艾欧符文16"
     },
     {
       "id": 10903,
       "Key": "r16L",
       "enUS": "Io",
-      "zhTW": "埃歐",
+      "zhTW": "埃歐:16",
       "deDE": "Io",
       "esES": "Io",
       "frFR": "Io",
@@ -34769,13 +34769,13 @@
       "jaJP": "イオ",
       "ptBR": "Io",
       "ruRU": "Ио",
-      "zhCN": "艾欧"
+      "zhCN": "艾欧:16"
     },
     {
       "id": 10904,
       "Key": "r13",
       "enUS": "Shael Rune",
-      "zhTW": "符文：夏",
+      "zhTW": "符文13：夏",
       "deDE": "[fs]Shael-Rune",
       "esES": "Runa Shael",
       "frFR": "[fs]Rune Shael",
@@ -34786,13 +34786,13 @@
       "jaJP": "シャエル・ルーン",
       "ptBR": "Runa Shael",
       "ruRU": "Руна Шаэл",
-      "zhCN": "沙伊符文"
+      "zhCN": "沙伊符文13"
     },
     {
       "id": 10905,
       "Key": "r13L",
       "enUS": "Shael",
-      "zhTW": "夏",
+      "zhTW": "夏:13",
       "deDE": "Shael",
       "esES": "Shael",
       "frFR": "Shael",
@@ -34803,13 +34803,13 @@
       "jaJP": "シャエル",
       "ptBR": "Shael",
       "ruRU": "Шаэль",
-      "zhCN": "沙伊"
+      "zhCN": "沙伊:13"
     },
     {
       "id": 10906,
       "Key": "r31",
       "enUS": "Jah Rune",
-      "zhTW": "符文：喬",
+      "zhTW": "符文31：喬",
       "deDE": "[fs]Jah-Rune",
       "esES": "Runa Jah",
       "frFR": "[fs]Rune Jah",
@@ -34820,13 +34820,13 @@
       "jaJP": "ジャー・ルーン",
       "ptBR": "Runa Jah",
       "ruRU": "Руна Джа",
-      "zhCN": "扎哈符文"
+      "zhCN": "扎哈符文31"
     },
     {
       "id": 10907,
       "Key": "r31L",
       "enUS": "Jah",
-      "zhTW": "喬",
+      "zhTW": "喬:31",
       "deDE": "Jah",
       "esES": "Jah",
       "frFR": "Jah",
@@ -34837,7 +34837,7 @@
       "jaJP": "ジャー",
       "ptBR": "Jah",
       "ruRU": "Джа",
-      "zhCN": "扎哈"
+      "zhCN": "扎哈:31"
     },
     {
       "id": 10910,
@@ -34860,7 +34860,7 @@
       "id": 20440,
       "Key": "r33",
       "enUS": "Zod Rune",
-      "zhTW": "符文：薩德",
+      "zhTW": "符文33：薩德",
       "deDE": "[fs]Zod-Rune",
       "esES": "Runa Zod",
       "frFR": "[fs]Rune Zod",
@@ -34871,13 +34871,13 @@
       "jaJP": "ゾッド・ルーン",
       "ptBR": "Runa Zod",
       "ruRU": "Руна Зод",
-      "zhCN": "佐德符文"
+      "zhCN": "佐德符文33"
     },
     {
       "id": 20441,
       "Key": "r32",
       "enUS": "Cham Rune",
-      "zhTW": "符文：查姆",
+      "zhTW": "符文32：查姆",
       "deDE": "[fs]Cham-Rune",
       "esES": "Runa Cham",
       "frFR": "[fs]Rune Cham",
@@ -34888,13 +34888,13 @@
       "jaJP": "チャム・ルーン",
       "ptBR": "Runa Cham",
       "ruRU": "Руна Чам",
-      "zhCN": "查姆符文"
+      "zhCN": "查姆符文32"
     },
     {
       "id": 20443,
       "Key": "r30",
       "enUS": "Ber Rune",
-      "zhTW": "符文：貝",
+      "zhTW": "符文30：貝",
       "deDE": "[fs]Ber-Rune",
       "esES": "Runa Ber",
       "frFR": "[fs]Rune Ber",
@@ -34905,13 +34905,13 @@
       "jaJP": "バー・ルーン",
       "ptBR": "Runa Ber",
       "ruRU": "Руна Бер",
-      "zhCN": "贝符文"
+      "zhCN": "贝符文30"
     },
     {
       "id": 20444,
       "Key": "r29",
       "enUS": "Sur Rune",
-      "zhTW": "符文：瑟",
+      "zhTW": "符文29：瑟",
       "deDE": "[fs]Sur-Rune",
       "esES": "Runa Sur",
       "frFR": "[fs]Rune Sur",
@@ -34922,13 +34922,13 @@
       "jaJP": "サー・ルーン",
       "ptBR": "Runa Sur",
       "ruRU": "Руна Сур",
-      "zhCN": "瑟符文"
+      "zhCN": "瑟符文29"
     },
     {
       "id": 20445,
       "Key": "r28",
       "enUS": "Lo Rune",
-      "zhTW": "符文：羅",
+      "zhTW": "符文28：羅",
       "deDE": "[fs]Lo-Rune",
       "esES": "Runa Lo",
       "frFR": "[fs]Rune Lo",
@@ -34939,13 +34939,13 @@
       "jaJP": "ロー・ルーン",
       "ptBR": "Runa Lo",
       "ruRU": "Руна Ло",
-      "zhCN": "罗符文"
+      "zhCN": "罗符文28"
     },
     {
       "id": 20446,
       "Key": "r27",
       "enUS": "Ohm Rune",
-      "zhTW": "符文：歐姆",
+      "zhTW": "符文27：歐姆",
       "deDE": "[fs]Ohm-Rune",
       "esES": "Runa Ohm",
       "frFR": "[fs]Rune Ohm",
@@ -34956,13 +34956,13 @@
       "jaJP": "オーム・ルーン",
       "ptBR": "Runa Ohm",
       "ruRU": "Руна Ом",
-      "zhCN": "欧姆符文"
+      "zhCN": "欧姆符文27"
     },
     {
       "id": 20447,
       "Key": "r26",
       "enUS": "Vex Rune",
-      "zhTW": "符文：伐克斯",
+      "zhTW": "符文26：伐克斯",
       "deDE": "[fs]Vex-Rune",
       "esES": "Runa Vex",
       "frFR": "[fs]Rune Vex",
@@ -34973,13 +34973,13 @@
       "jaJP": "ヴェックス・ルーン",
       "ptBR": "Runa Vex",
       "ruRU": "Руна Векс",
-      "zhCN": "伐克斯符文"
+      "zhCN": "伐克斯符文26"
     },
     {
       "id": 20448,
       "Key": "r25",
       "enUS": "Gul Rune",
-      "zhTW": "符文：古爾",
+      "zhTW": "符文25：古爾",
       "deDE": "[fs]Gul-Rune",
       "esES": "Runa Gul",
       "frFR": "[fs]Rune Gul",
@@ -34990,13 +34990,13 @@
       "jaJP": "ガル・ルーン",
       "ptBR": "Runa Gul",
       "ruRU": "Руна Гул",
-      "zhCN": "古尔符文"
+      "zhCN": "古尔符文25"
     },
     {
       "id": 20449,
       "Key": "r24",
       "enUS": "Ist Rune",
-      "zhTW": "符文：伊司特",
+      "zhTW": "符文24：伊司特",
       "deDE": "[fs]Ist-Rune",
       "esES": "Runa Ist",
       "frFR": "[fs]Rune Ist",
@@ -35007,13 +35007,13 @@
       "jaJP": "イスト・ルーン",
       "ptBR": "Runa Ist",
       "ruRU": "Руна Ист",
-      "zhCN": "伊司特符文"
+      "zhCN": "伊司特符文24"
     },
     {
       "id": 20450,
       "Key": "r23",
       "enUS": "Mal Rune",
-      "zhTW": "符文：馬爾",
+      "zhTW": "符文23：馬爾",
       "deDE": "[fs]Mal-Rune",
       "esES": "Runa Mal",
       "frFR": "[fs]Rune Mal",
@@ -35024,13 +35024,13 @@
       "jaJP": "マル・ルーン",
       "ptBR": "Runa Mal",
       "ruRU": "Руна Мал",
-      "zhCN": "玛尔符文"
+      "zhCN": "玛尔符文23"
     },
     {
       "id": 20451,
       "Key": "r22",
       "enUS": "Um Rune",
-      "zhTW": "符文：烏姆",
+      "zhTW": "符文22：烏姆",
       "deDE": "[fs]Um-Rune",
       "esES": "Runa Um",
       "frFR": "[fs]Rune Um",
@@ -35041,13 +35041,13 @@
       "jaJP": "アム・ルーン",
       "ptBR": "Runa Um",
       "ruRU": "Руна Ум",
-      "zhCN": "乌姆符文"
+      "zhCN": "乌姆符文22"
     },
     {
       "id": 20452,
       "Key": "r21",
       "enUS": "Pul Rune",
-      "zhTW": "符文：普爾",
+      "zhTW": "符文21：普爾",
       "deDE": "[fs]Pul-Rune",
       "esES": "Runa Pul",
       "frFR": "[fs]Rune Pul",
@@ -35058,13 +35058,13 @@
       "jaJP": "プル・ルーン",
       "ptBR": "Runa Pul",
       "ruRU": "Руна Пул",
-      "zhCN": "普尔符文"
+      "zhCN": "普尔符文21"
     },
     {
       "id": 20453,
       "Key": "r20",
       "enUS": "Lem Rune",
-      "zhTW": "符文：藍姆",
+      "zhTW": "符文20：藍姆",
       "deDE": "[fs]Lem-Rune",
       "esES": "Runa Lem",
       "frFR": "[fs]Rune Lem",
@@ -35075,13 +35075,13 @@
       "jaJP": "レム・ルーン",
       "ptBR": "Runa Lem",
       "ruRU": "Руна Лем",
-      "zhCN": "兰姆符文"
+      "zhCN": "兰姆符文20"
     },
     {
       "id": 20454,
       "Key": "r19",
       "enUS": "Fal Rune",
-      "zhTW": "符文：法爾",
+      "zhTW": "符文19：法爾",
       "deDE": "[fs]Fal-Rune",
       "esES": "Runa Fal",
       "frFR": "[fs]Rune Fal",
@@ -35092,13 +35092,13 @@
       "jaJP": "ファル・ルーン",
       "ptBR": "Runa Fal",
       "ruRU": "Руна Фал",
-      "zhCN": "法尔符文"
+      "zhCN": "法尔符文19"
     },
     {
       "id": 20455,
       "Key": "r18",
       "enUS": "Ko Rune",
-      "zhTW": "符文：科",
+      "zhTW": "符文18：科",
       "deDE": "[fs]Ko-Rune",
       "esES": "Runa Ko",
       "frFR": "[fs]Rune Ko",
@@ -35109,13 +35109,13 @@
       "jaJP": "コー・ルーン",
       "ptBR": "Runa Ko",
       "ruRU": "Руна Ко",
-      "zhCN": "科符文"
+      "zhCN": "科符文18"
     },
     {
       "id": 20456,
       "Key": "r17",
       "enUS": "Lum Rune",
-      "zhTW": "符文：盧姆",
+      "zhTW": "符文17：盧姆",
       "deDE": "[fs]Lum-Rune",
       "esES": "Runa Lum",
       "frFR": "[fs]Rune Lum",
@@ -35126,13 +35126,13 @@
       "jaJP": "ラム・ルーン",
       "ptBR": "Runa Lum",
       "ruRU": "Руна Лум",
-      "zhCN": "卢姆符文"
+      "zhCN": "卢姆符文17"
     },
     {
       "id": 20458,
       "Key": "r15",
       "enUS": "Hel Rune",
-      "zhTW": "符文：海爾",
+      "zhTW": "符文15：海爾",
       "deDE": "[fs]Hel-Rune",
       "esES": "Runa Hel",
       "frFR": "[fs]Rune Hel",
@@ -35143,13 +35143,13 @@
       "jaJP": "ヘル・ルーン",
       "ptBR": "Runa Hel",
       "ruRU": "Руна Хел",
-      "zhCN": "海尔符文"
+      "zhCN": "海尔符文15"
     },
     {
       "id": 20459,
       "Key": "r14",
       "enUS": "Dol Rune",
-      "zhTW": "符文：多爾",
+      "zhTW": "符文14：多爾",
       "deDE": "[fs]Dol-Rune",
       "esES": "Runa Dol",
       "frFR": "[fs]Rune Dol",
@@ -35160,13 +35160,13 @@
       "jaJP": "ドル・ルーン",
       "ptBR": "Runa Dol",
       "ruRU": "Руна Дол",
-      "zhCN": "多尔符文"
+      "zhCN": "多尔符文14"
     },
     {
       "id": 20461,
       "Key": "r12",
       "enUS": "Sol Rune",
-      "zhTW": "符文：索爾",
+      "zhTW": "符文12：索爾",
       "deDE": "[fs]Sol-Rune",
       "esES": "Runa Sol",
       "frFR": "[fs]Rune Sol",
@@ -35177,13 +35177,13 @@
       "jaJP": "ソル・ルーン",
       "ptBR": "Runa Sol",
       "ruRU": "Руна Сол",
-      "zhCN": "索尔符文"
+      "zhCN": "索尔符文12"
     },
     {
       "id": 20462,
       "Key": "r11",
       "enUS": "Amn Rune",
-      "zhTW": "符文：安姆",
+      "zhTW": "符文11：安姆",
       "deDE": "[fs]Amn-Rune",
       "esES": "Runa Amn",
       "frFR": "[fs]Rune Amn",
@@ -35194,13 +35194,13 @@
       "jaJP": "アムン・ルーン",
       "ptBR": "Runa Amn",
       "ruRU": "Руна Амн",
-      "zhCN": "安姆符文"
+      "zhCN": "安姆符文11"
     },
     {
       "id": 20463,
       "Key": "r10",
       "enUS": "Thul Rune",
-      "zhTW": "符文：書爾",
+      "zhTW": "符文10：書爾",
       "deDE": "[fs]Thul-Rune",
       "esES": "Runa Thul",
       "frFR": "[fs]Rune Thul",
@@ -35211,13 +35211,13 @@
       "jaJP": "スル・ルーン",
       "ptBR": "Runa Thul",
       "ruRU": "Руна Тул",
-      "zhCN": "图尔符文"
+      "zhCN": "图尔符文10"
     },
     {
       "id": 20464,
       "Key": "r09",
       "enUS": "Ort Rune",
-      "zhTW": "符文：歐特",
+      "zhTW": "符文9：歐特",
       "deDE": "[fs]Ort-Rune",
       "esES": "Runa Ort",
       "frFR": "[fs]Rune Ort",
@@ -35228,13 +35228,13 @@
       "jaJP": "オルト・ルーン",
       "ptBR": "Runa Ort",
       "ruRU": "Руна Орт",
-      "zhCN": "欧特符文"
+      "zhCN": "欧特符文9"
     },
     {
       "id": 20465,
       "Key": "r08",
       "enUS": "Ral Rune",
-      "zhTW": "符文：拉爾",
+      "zhTW": "符文8：拉爾",
       "deDE": "[fs]Ral-Rune",
       "esES": "Runa Ral",
       "frFR": "[fs]Rune Ral",
@@ -35245,13 +35245,13 @@
       "jaJP": "ラル・ルーン",
       "ptBR": "Runa Ral",
       "ruRU": "Руна Рал",
-      "zhCN": "拉尔符文"
+      "zhCN": "拉尔符文8"
     },
     {
       "id": 20466,
       "Key": "r07",
       "enUS": "Tal Rune",
-      "zhTW": "符文：塔爾",
+      "zhTW": "符文7：塔爾",
       "deDE": "[fs]Tal-Rune",
       "esES": "Runa Tal",
       "frFR": "[fs]Rune Tal",
@@ -35262,13 +35262,13 @@
       "jaJP": "タル・ルーン",
       "ptBR": "Runa Tal",
       "ruRU": "Руна Тал",
-      "zhCN": "塔尔符文"
+      "zhCN": "塔尔符文7"
     },
     {
       "id": 20467,
       "Key": "r06",
       "enUS": "Ith Rune",
-      "zhTW": "符文：伊司",
+      "zhTW": "符文6：伊司",
       "deDE": "[fs]Ith-Rune",
       "esES": "Runa Ith",
       "frFR": "[fs]Rune Ith",
@@ -35279,13 +35279,13 @@
       "jaJP": "イス・ルーン",
       "ptBR": "Runa Ith",
       "ruRU": "Руна Ит",
-      "zhCN": "伊司符文"
+      "zhCN": "伊司符文6"
     },
     {
       "id": 20468,
       "Key": "r05",
       "enUS": "Eth Rune",
-      "zhTW": "符文：愛斯",
+      "zhTW": "符文5：愛斯",
       "deDE": "[fs]Eth-Rune",
       "esES": "Runa Eth",
       "frFR": "[fs]Rune Eth",
@@ -35296,13 +35296,13 @@
       "jaJP": "エス・ルーン",
       "ptBR": "Runa Eth",
       "ruRU": "Руна Эт",
-      "zhCN": "艾斯符文"
+      "zhCN": "艾斯符文5"
     },
     {
       "id": 20469,
       "Key": "r04",
       "enUS": "Nef Rune",
-      "zhTW": "符文：那夫",
+      "zhTW": "符文4：那夫",
       "deDE": "[fs]Nef-Rune",
       "esES": "Runa Nef",
       "frFR": "[fs]Rune Nef",
@@ -35313,13 +35313,13 @@
       "jaJP": "ネフ・ルーン",
       "ptBR": "Runa Nef",
       "ruRU": "Руна Неф",
-      "zhCN": "奈夫符文"
+      "zhCN": "奈夫符文4"
     },
     {
       "id": 20470,
       "Key": "r03",
       "enUS": "Tir Rune",
-      "zhTW": "符文：特爾",
+      "zhTW": "符文3：特爾",
       "deDE": "[fs]Tir-Rune",
       "esES": "Runa Tir",
       "frFR": "[fs]Rune Tir",
@@ -35330,13 +35330,13 @@
       "jaJP": "ティア・ルーン",
       "ptBR": "Runa Tir",
       "ruRU": "Руна Тир",
-      "zhCN": "提尔符文"
+      "zhCN": "提尔符文3"
     },
     {
       "id": 20471,
       "Key": "r02",
       "enUS": "Eld Rune",
-      "zhTW": "符文：艾德",
+      "zhTW": "符文2：艾德",
       "deDE": "[fs]Eld-Rune",
       "esES": "Runa Eld",
       "frFR": "[fs]Rune Eld",
@@ -35347,13 +35347,13 @@
       "jaJP": "エルド・ルーン",
       "ptBR": "Runa Eld",
       "ruRU": "Руна Элд",
-      "zhCN": "艾德符文"
+      "zhCN": "艾德符文2"
     },
     {
       "id": 20472,
       "Key": "r01",
       "enUS": "El Rune",
-      "zhTW": "符文：艾爾",
+      "zhTW": "符文1：艾爾",
       "deDE": "[fs]El-Rune",
       "esES": "Runa El",
       "frFR": "[fs]Rune El",
@@ -35364,13 +35364,13 @@
       "jaJP": "エル・ルーン",
       "ptBR": "Runa El",
       "ruRU": "Руна Эл",
-      "zhCN": "艾尔符文"
+      "zhCN": "艾尔符文1"
     },
     {
       "id": 20473,
       "Key": "r33L",
       "enUS": "Zod",
-      "zhTW": "薩德",
+      "zhTW": "薩德:33",
       "deDE": "Zod",
       "esES": "Zod",
       "frFR": "Zod",
@@ -35381,13 +35381,13 @@
       "jaJP": "ゾッド",
       "ptBR": "Zod",
       "ruRU": "Зод",
-      "zhCN": "佐德"
+      "zhCN": "佐德:33"
     },
     {
       "id": 20474,
       "Key": "r32L",
       "enUS": "Cham",
-      "zhTW": "查姆",
+      "zhTW": "查姆:32",
       "deDE": "Cham",
       "esES": "Cham",
       "frFR": "Cham",
@@ -35398,13 +35398,13 @@
       "jaJP": "チャム",
       "ptBR": "Cham",
       "ruRU": "Чам",
-      "zhCN": "查姆"
+      "zhCN": "查姆:32"
     },
     {
       "id": 20476,
       "Key": "r30L",
       "enUS": "Ber",
-      "zhTW": "貝",
+      "zhTW": "貝:30",
       "deDE": "Ber",
       "esES": "Ber",
       "frFR": "Ber",
@@ -35415,13 +35415,13 @@
       "jaJP": "バー",
       "ptBR": "Ber",
       "ruRU": "Бер",
-      "zhCN": "贝"
+      "zhCN": "贝:30"
     },
     {
       "id": 20477,
       "Key": "r29L",
       "enUS": "Sur",
-      "zhTW": "瑟",
+      "zhTW": "瑟:29",
       "deDE": "Sur",
       "esES": "Sur",
       "frFR": "Sur",
@@ -35432,13 +35432,13 @@
       "jaJP": "サー",
       "ptBR": "Sur",
       "ruRU": "Сур",
-      "zhCN": "瑟"
+      "zhCN": "瑟:29"
     },
     {
       "id": 20478,
       "Key": "r28L",
       "enUS": "Lo",
-      "zhTW": "羅",
+      "zhTW": "羅:28",
       "deDE": "Lo",
       "esES": "Lo",
       "frFR": "Lo",
@@ -35449,13 +35449,13 @@
       "jaJP": "ロー",
       "ptBR": "Lo",
       "ruRU": "Ло",
-      "zhCN": "罗"
+      "zhCN": "罗:28"
     },
     {
       "id": 20479,
       "Key": "r27L",
       "enUS": "Ohm",
-      "zhTW": "歐姆",
+      "zhTW": "歐姆:27",
       "deDE": "Ohm",
       "esES": "Ohm",
       "frFR": "Ohm",
@@ -35466,13 +35466,13 @@
       "jaJP": "オーム",
       "ptBR": "Ohm",
       "ruRU": "Ом",
-      "zhCN": "欧姆"
+      "zhCN": "欧姆:27"
     },
     {
       "id": 20480,
       "Key": "r26L",
       "enUS": "Vex",
-      "zhTW": "伐克斯",
+      "zhTW": "伐克斯:26",
       "deDE": "Vex",
       "esES": "Vex",
       "frFR": "Vex",
@@ -35483,13 +35483,13 @@
       "jaJP": "ヴェックス",
       "ptBR": "Vex",
       "ruRU": "Векс",
-      "zhCN": "伐克斯"
+      "zhCN": "伐克斯:26"
     },
     {
       "id": 20481,
       "Key": "r25L",
       "enUS": "Gul",
-      "zhTW": "古爾",
+      "zhTW": "古爾:25",
       "deDE": "Gul",
       "esES": "Gul",
       "frFR": "Gul",
@@ -35500,13 +35500,13 @@
       "jaJP": "ガル",
       "ptBR": "Gul",
       "ruRU": "Гул",
-      "zhCN": "古尔"
+      "zhCN": "古尔:25"
     },
     {
       "id": 20482,
       "Key": "r24L",
       "enUS": "Ist",
-      "zhTW": "伊司特",
+      "zhTW": "伊司特:24",
       "deDE": "Ist",
       "esES": "Ist",
       "frFR": "Ist",
@@ -35517,13 +35517,13 @@
       "jaJP": "イスト",
       "ptBR": "Ist",
       "ruRU": "Ист",
-      "zhCN": "伊司特"
+      "zhCN": "伊司特:24"
     },
     {
       "id": 20483,
       "Key": "r23L",
       "enUS": "Mal",
-      "zhTW": "馬爾",
+      "zhTW": "馬爾:23",
       "deDE": "Mal",
       "esES": "Mal",
       "frFR": "Mal",
@@ -35534,13 +35534,13 @@
       "jaJP": "マル",
       "ptBR": "Mal",
       "ruRU": "Мал",
-      "zhCN": "玛尔"
+      "zhCN": "玛尔:23"
     },
     {
       "id": 20484,
       "Key": "r22L",
       "enUS": "Um",
-      "zhTW": "烏姆",
+      "zhTW": "烏姆:22",
       "deDE": "Um",
       "esES": "Um",
       "frFR": "Um",
@@ -35551,13 +35551,13 @@
       "jaJP": "アム",
       "ptBR": "Um",
       "ruRU": "Ом",
-      "zhCN": "乌姆"
+      "zhCN": "乌姆:22"
     },
     {
       "id": 20485,
       "Key": "r21L",
       "enUS": "Pul",
-      "zhTW": "普爾",
+      "zhTW": "普爾:21",
       "deDE": "Pul",
       "esES": "Pul",
       "frFR": "Pul",
@@ -35568,13 +35568,13 @@
       "jaJP": "プル",
       "ptBR": "Pul",
       "ruRU": "Пул",
-      "zhCN": "普尔"
+      "zhCN": "普尔:21"
     },
     {
       "id": 20486,
       "Key": "r20L",
       "enUS": "Lem",
-      "zhTW": "藍姆",
+      "zhTW": "藍姆:20",
       "deDE": "Lem",
       "esES": "Lem",
       "frFR": "Lem",
@@ -35585,13 +35585,13 @@
       "jaJP": "レム",
       "ptBR": "Lem",
       "ruRU": "Лем",
-      "zhCN": "兰姆"
+      "zhCN": "兰姆:20"
     },
     {
       "id": 20487,
       "Key": "r19L",
       "enUS": "Fal",
-      "zhTW": "法爾",
+      "zhTW": "法爾:19",
       "deDE": "Fal",
       "esES": "Fal",
       "frFR": "Fal",
@@ -35602,13 +35602,13 @@
       "jaJP": "ファル",
       "ptBR": "Fal",
       "ruRU": "Фал",
-      "zhCN": "法尔"
+      "zhCN": "法尔:19"
     },
     {
       "id": 20488,
       "Key": "r18L",
       "enUS": "Ko",
-      "zhTW": "科",
+      "zhTW": "科:18",
       "deDE": "Ko",
       "esES": "Ko",
       "frFR": "Ko",
@@ -35619,12 +35619,12 @@
       "jaJP": "コー",
       "ptBR": "Ko",
       "ruRU": "Ко",
-      "zhCN": "科"
+      "zhCN": "科:18"
     },
     {
       "id": 20489,
       "Key": "r17L",
-      "enUS": "Lum",
+      "enUS": "Lum:17",
       "zhTW": "盧姆",
       "deDE": "Lum",
       "esES": "Lum",
@@ -35636,13 +35636,13 @@
       "jaJP": "ラム",
       "ptBR": "Lum",
       "ruRU": "Лум",
-      "zhCN": "卢姆"
+      "zhCN": "卢姆:17"
     },
     {
       "id": 20491,
       "Key": "r15L",
       "enUS": "Hel",
-      "zhTW": "海爾",
+      "zhTW": "海爾:15",
       "deDE": "Hel",
       "esES": "Hel",
       "frFR": "Hel",
@@ -35653,13 +35653,13 @@
       "jaJP": "ヘル",
       "ptBR": "Hel",
       "ruRU": "Хел",
-      "zhCN": "海尔"
+      "zhCN": "海尔:15"
     },
     {
       "id": 20492,
       "Key": "r14L",
       "enUS": "Dol",
-      "zhTW": "多爾",
+      "zhTW": "多爾:14",
       "deDE": "Dol",
       "esES": "Dol",
       "frFR": "Dol",
@@ -35670,13 +35670,13 @@
       "jaJP": "ドル",
       "ptBR": "Dol",
       "ruRU": "Дол",
-      "zhCN": "多尔"
+      "zhCN": "多尔:14"
     },
     {
       "id": 20494,
       "Key": "r12L",
       "enUS": "Sol",
-      "zhTW": "索爾",
+      "zhTW": "索爾:12",
       "deDE": "Sol",
       "esES": "Sol",
       "frFR": "Sol",
@@ -35687,13 +35687,13 @@
       "jaJP": "ソル",
       "ptBR": "Sol",
       "ruRU": "Сол",
-      "zhCN": "索尔"
+      "zhCN": "索尔:12"
     },
     {
       "id": 20495,
       "Key": "r11L",
       "enUS": "Amn",
-      "zhTW": "安姆",
+      "zhTW": "安姆:111",
       "deDE": "Amn",
       "esES": "Amn",
       "frFR": "Amn",
@@ -35704,13 +35704,13 @@
       "jaJP": "アムン",
       "ptBR": "Amn",
       "ruRU": "Амн",
-      "zhCN": "安姆"
+      "zhCN": "安姆:11"
     },
     {
       "id": 20496,
       "Key": "r10L",
       "enUS": "Thul",
-      "zhTW": "書爾",
+      "zhTW": "書爾:10",
       "deDE": "Thul",
       "esES": "Thul",
       "frFR": "Thul",
@@ -35721,13 +35721,13 @@
       "jaJP": "スル",
       "ptBR": "Thul",
       "ruRU": "Тул",
-      "zhCN": "图尔"
+      "zhCN": "图尔:10"
     },
     {
       "id": 20497,
       "Key": "r09L",
       "enUS": "Ort",
-      "zhTW": "歐特",
+      "zhTW": "歐特:9",
       "deDE": "Ort",
       "esES": "Ort",
       "frFR": "Ort",
@@ -35738,13 +35738,13 @@
       "jaJP": "オルト",
       "ptBR": "Ort",
       "ruRU": "Орт",
-      "zhCN": "欧特"
+      "zhCN": "欧特:9"
     },
     {
       "id": 20498,
       "Key": "r08L",
       "enUS": "Ral",
-      "zhTW": "拉爾",
+      "zhTW": "拉爾:8",
       "deDE": "Ral",
       "esES": "Ral",
       "frFR": "Ral",
@@ -35755,13 +35755,13 @@
       "jaJP": "ラル",
       "ptBR": "Ral",
       "ruRU": "Рал",
-      "zhCN": "拉尔"
+      "zhCN": "拉尔:8"
     },
     {
       "id": 20499,
       "Key": "r07L",
       "enUS": "Tal",
-      "zhTW": "塔爾",
+      "zhTW": "塔爾:7",
       "deDE": "Tal",
       "esES": "Tal",
       "frFR": "Tal",
@@ -35772,13 +35772,13 @@
       "jaJP": "タル",
       "ptBR": "Tal",
       "ruRU": "Тхаль",
-      "zhCN": "塔尔"
+      "zhCN": "塔尔:7"
     },
     {
       "id": 20500,
       "Key": "r06L",
       "enUS": "Ith",
-      "zhTW": "伊司",
+      "zhTW": "伊司:6",
       "deDE": "Ith",
       "esES": "Ith",
       "frFR": "Ith",
@@ -35789,13 +35789,13 @@
       "jaJP": "イス",
       "ptBR": "Ith",
       "ruRU": "Ит",
-      "zhCN": "伊司"
+      "zhCN": "伊司:6"
     },
     {
       "id": 20501,
       "Key": "r05L",
       "enUS": "Eth",
-      "zhTW": "愛斯",
+      "zhTW": "愛斯:5",
       "deDE": "Eth",
       "esES": "Eth",
       "frFR": "Eth",
@@ -35806,13 +35806,13 @@
       "jaJP": "エス",
       "ptBR": "Eth",
       "ruRU": "Эт",
-      "zhCN": "艾斯"
+      "zhCN": "艾斯:5"
     },
     {
       "id": 20502,
       "Key": "r04L",
       "enUS": "Nef",
-      "zhTW": "那夫",
+      "zhTW": "那夫:4",
       "deDE": "Nef",
       "esES": "Nef",
       "frFR": "Nef",
@@ -35823,13 +35823,13 @@
       "jaJP": "ネフ",
       "ptBR": "Nef",
       "ruRU": "Неф",
-      "zhCN": "奈夫"
+      "zhCN": "奈夫:4"
     },
     {
       "id": 20503,
       "Key": "r03L",
       "enUS": "Tir",
-      "zhTW": "特爾",
+      "zhTW": "特爾:3",
       "deDE": "Tir",
       "esES": "Tir",
       "frFR": "Tir",
@@ -35840,13 +35840,13 @@
       "jaJP": "ティア",
       "ptBR": "Tir",
       "ruRU": "Тир",
-      "zhCN": "提尔"
+      "zhCN": "提尔:3"
     },
     {
       "id": 20504,
       "Key": "r02L",
       "enUS": "Eld",
-      "zhTW": "艾德",
+      "zhTW": "艾德:2",
       "deDE": "Eld",
       "esES": "Eld",
       "frFR": "Eld",
@@ -35857,13 +35857,13 @@
       "jaJP": "エルド",
       "ptBR": "Eld",
       "ruRU": "Элд",
-      "zhCN": "艾德"
+      "zhCN": "艾德:2"
     },
     {
       "id": 20505,
       "Key": "r01L",
       "enUS": "El",
-      "zhTW": "艾爾",
+      "zhTW": "艾爾:1",
       "deDE": "El",
       "esES": "El",
       "frFR": "El",
@@ -35874,7 +35874,7 @@
       "jaJP": "エル",
       "ptBR": "El",
       "ruRU": "Эль",
-      "zhCN": "艾尔"
+      "zhCN": "艾尔:1"
     },
     {
       "id": 20506,

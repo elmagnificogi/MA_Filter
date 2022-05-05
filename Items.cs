@@ -1751,8 +1751,6 @@ namespace MapAssist.Types
             [Item.ClassBoots] = new Item[] { Item.Boots, Item.HeavyBoots, Item.ChainBoots, Item.LightPlatedBoots, Item.Greaves, Item.DemonhideBoots, Item.SharkskinBoots, Item.MeshBoots, Item.BattleBoots, Item.WarBoots, Item.WyrmhideBoots, Item.ScarabshellBoots, Item.BoneweaveBoots, Item.MirroredBoots, Item.MyrmidonGreaves },
             [Item.ClassBelts] = new Item[] { Item.Sash, Item.LightBelt, Item.Belt, Item.HeavyBelt, Item.PlatedBelt, Item.DemonhideSash, Item.SharkskinBelt, Item.MeshBelt, Item.BattleBelt, Item.WarBelt, Item.SpiderwebSash, Item.VampirefangBelt, Item.MithrilCoil, Item.TrollBelt, Item.ColossusGirdle },
             [Item.ClassCirclets] = new Item[] { Item.Circlet, Item.Coronet, Item.Tiara, Item.Diadem },
-            [Item.Ring] = new Item[] { Item.Ring},
-            [Item.Amulet] = new Item[] { Item.Amulet},
 
             [Item.ClassAssassinKatars] = new Item[] { Item.Katar, Item.WristBlade, Item.HatchetHands, Item.Cestus, Item.Claws, Item.BladeTalons, Item.ScissorsKatar, Item.Quhab, Item.WristSpike, Item.Fascia, Item.HandScythe, Item.GreaterClaws, Item.GreaterTalons, Item.ScissorsQuhab, Item.Suwayyah, Item.WristSword, Item.WarFist, Item.BattleCestus, Item.FeralClaws, Item.RunicTalons, Item.ScissorsSuwayyah },
             [Item.ClassSorceressOrbs] = new Item[] { Item.EagleOrb, Item.SacredGlobe, Item.SmokedSphere, Item.ClaspedOrb, Item.JaredsStone, Item.GlowingOrb, Item.CrystallineGlobe, Item.CloudySphere, Item.SparklingBall, Item.SwirlingCrystal, Item.HeavenlyStone, Item.EldritchOrb, Item.DemonHeart, Item.VortexOrb, Item.DimensionalShard },
@@ -1763,6 +1761,30 @@ namespace MapAssist.Types
             [Item.ClassBarbarianHelms] = new Item[] { Item.JawboneCap, Item.FangedHelm, Item.HornedHelm, Item.AssaultHelmet, Item.AvengerGuard, Item.JawboneVisor, Item.LionHelm, Item.RageMask, Item.SavageHelmet, Item.SlayerGuard, Item.CarnageHelm, Item.FuryVisor, Item.DestroyerHelm, Item.ConquerorCrown, Item.GuardianCrown },
             [Item.ClassPaladinShields] = new Item[] { Item.Targe, Item.Rondache, Item.HeraldicShield, Item.AerinShield, Item.CrownShield, Item.AkaranTarge, Item.AkaranRondache, Item.ProtectorShield, Item.GildedShield, Item.RoyalShield, Item.SacredTarge, Item.SacredRondache, Item.KurastShield, Item.ZakarumShield, Item.VortexShield },
             [Item.ClassNecromancerShields] = new Item[] { Item.PreservedHead, Item.ZombieHead, Item.UnravellerHead, Item.GargoyleHead, Item.DemonHeadShield, Item.MummifiedTrophy, Item.FetishTrophy, Item.SextonTrophy, Item.CantorTrophy, Item.HierophantTrophy, Item.MinionSkull, Item.HellspawnSkull, Item.OverseerSkull, Item.SuccubusSkull, Item.BloodlordSkull },
+
+            [Item.ClassRings] = new Item[] { Item.Ring },
+            [Item.ClassAmulets] = new Item[] { Item.Amulet },
+
+            [Item.ClassRunes] = new Item[] { 
+                Item.ElRune, Item.EldRune, Item.TirRune, Item.NefRune, Item.EthRune, Item.IthRune, Item.TalRune, Item.RalRune, Item.OrtRune, Item.ThulRune,
+                Item.AmnRune, Item.SolRune, Item.ShaelRune, Item.DolRune, Item.HelRune, Item.IoRune, Item.LumRune, Item.KoRune, Item.FalRune, Item.LemRune, 
+                Item.PulRune, Item.UmRune, Item.MalRune, Item.IstRune, Item.GulRune, Item.VexRune, Item.OhmRune, Item.LoRune, Item.SurRune, Item.BerRune, 
+                Item.JahRune,Item.ChamRune, Item.ZodRune},
+
+            [Item.ClassGems] = new Item[] {Item.Jewel,
+                Item.FlawlessAmethyst, Item.FlawlessDiamond, Item.FlawlessEmerald, Item.FlawlessRuby, Item.FlawlessSapphire, Item.FlawlessSkull, Item.FlawlessTopaz,
+                Item.Amethyst, Item.Diamond, Item.Emerald,Item.Ruby,Item.Sapphire,Item.Skull,Item.Topaz,
+                Item.FlawedAmethyst, Item.FlawedDiamond, Item.FlawedEmerald, Item.FlawedRuby, Item.FlawedSapphire, Item.FlawedSkull, Item.FlawedTopaz,
+                Item.ChippedAmethyst, Item.ChippedDiamond, Item.ChippedEmerald, Item.ChippedRuby, Item.ChippedSapphire, Item.ChippedSkull, Item.ChippedTopaz,
+                Item.PerfectAmethyst, Item.PerfectDiamond, Item.PerfectEmerald, Item.PerfectRuby, Item.PerfectSapphire, Item.PerfectSkull, Item.PerfectTopaz},
+
+            [Item.ClassCharms] = new Item[] { Item.SmallCharm, Item.LargeCharm, Item.GrandCharm},
+
+            [Item.ClassEssences] = new Item[] { Item.TwistedEssenceOfSuffering, Item.ChargedEssenceOfHatred, Item.BurningEssenceOfTerror, Item.FesteringEssenceOfDestruction, },
+
+            [Item.ClassKeys] = new Item[] { Item.KeyOfTerror, Item.KeyOfHate, Item.KeyOfDestruction },
+
+            [Item.ClassPotions] = new Item[] { Item.FullRejuvenationPotion, Item.RejuvenationPotion, Item.SuperHealingPotion, Item.SuperManaPotion},
         };
 
         public static readonly Dictionary<Item, string> ItemClassesToChinese = new Dictionary<Item, string>()
@@ -1791,8 +1813,6 @@ namespace MapAssist.Types
             [Item.ClassBoots] = "靴子",
             [Item.ClassBelts] = "腰带",
             [Item.ClassCirclets] = "头环",
-            [Item.Ring] = "戒指",
-            [Item.Amulet] = "项链",
 
             [Item.ClassAssassinKatars] = "刺客爪",
             [Item.ClassSorceressOrbs] = "法师法杖",
@@ -1803,6 +1823,15 @@ namespace MapAssist.Types
             [Item.ClassBarbarianHelms] = "野蛮人头盔",
             [Item.ClassPaladinShields] = "骑士盾牌",
             [Item.ClassNecromancerShields] = "死灵盾牌",
+
+            [Item.ClassRings] = "戒指",
+            [Item.ClassAmulets] = "项链",
+            [Item.ClassRunes] = "符文",
+            [Item.ClassGems] = "宝石/珠宝",
+            [Item.ClassCharms] = "神符",
+            [Item.ClassEssences] = "精华",
+            [Item.ClassKeys] = "钥匙",
+            [Item.ClassPotions] = "药水",
 
         };
     }
@@ -2627,6 +2656,15 @@ namespace MapAssist.Types
         ClassBarbarianHelms,
         ClassPaladinShields,
         ClassNecromancerShields,
+
+        ClassRings,
+        ClassAmulets,
+        ClassRunes,
+        ClassGems,
+        ClassCharms,
+        ClassEssences,
+        ClassKeys,
+        ClassPotions,
 
         xBases = 0xFFFF - 0x1,
         Any = 0xFFFF
