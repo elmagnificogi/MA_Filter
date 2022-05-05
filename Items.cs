@@ -1831,7 +1831,7 @@ namespace MapAssist.Types
             [Item.ClassCharms] = "神符",
             [Item.ClassEssences] = "精华",
             [Item.ClassKeys] = "钥匙",
-            [Item.ClassPotions] = "药水",
+            [Item.ClassPotions] = "药水-无法过滤",
 
         };
     }
