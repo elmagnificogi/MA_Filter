@@ -2,7 +2,7 @@
 
 
 
-主要是用来修改MapAssist的掉落过滤文件的，GUI的版本，比手动改yaml强一些，目前功能还不完善，但是基本可用
+主要是用来修改MapAssist的掉落过滤文件的，GUI的版本，比手动改yaml方便多了
 
 
 
@@ -26,11 +26,11 @@ MapAssist 中文版
 
 **增加过滤流程**
 
-![123](http://img.elmagnifico.tech:9514/static/upload/elmagnifico/123.png)
+![image-20220506020722397](http://img.elmagnifico.tech:9514/static/upload/elmagnifico/202205060207504.png)
 
 **修改过滤流程**
 
-![image-20220505094243900](http://img.elmagnifico.tech:9514/static/upload/elmagnifico/image-20220505094243900.png)
+![image-20220506020817516](http://img.elmagnifico.tech:9514/static/upload/elmagnifico/202205060208566.png)
 
 
 
@@ -39,11 +39,6 @@ MapAssist 中文版
 - 过滤孔数
 - 过滤物品质量
 - 过滤无形
-
-
-
-## TODO
-
 - 符文过滤
 - 宝石过滤
 - 精华等特殊物品过滤
@@ -52,3 +47,9 @@ MapAssist 中文版
 - 技能过滤
 - 过滤模板
 - 过滤文件冗余
+
+
+
+## TODO
+
+- 模板功能组
