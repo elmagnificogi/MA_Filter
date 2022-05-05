@@ -94,7 +94,6 @@ namespace MA_Filter
                 comboBox4.Items.Add(item.Value);
                 comboBox8.Items.Add(item.Value);
                 comboBox9.Items.Add(item.Value);
-                comboBox10.Items.Add(item.Value);
             }
             
             // add all skill
@@ -239,17 +238,6 @@ namespace MA_Filter
                 curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter, int.Parse(textBox3.Text));
             }
 
-            if (comboBox10.SelectedIndex != -1)
-            {
-                string affix = Affix.ItemAffix.First(q => q.Value == comboBox10.SelectedItem.ToString()).Key;
-                if (textBox6.Text.Trim() == "")
-                {
-                    MessageBox.Show("词缀必须填数值");
-                    return;
-                }
-                curItemFilter.GetType().GetProperty(affix).SetValue(curItemFilter, int.Parse(textBox6.Text));
-            }
-
             curItemFilters[comboBox11.SelectedIndex] = curItemFilter;
             sumRules[curSelectItem] = curItemFilters;
         }
@@ -347,7 +335,7 @@ namespace MA_Filter
 
             List<ComboBox> affix_combox = new List<ComboBox>
             {
-                comboBox4,comboBox8,comboBox9,comboBox10
+                comboBox4,comboBox8,comboBox9
             };
             List<TextBox> affix_combox_value = new List<TextBox>
             {
