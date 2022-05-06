@@ -1,5 +1,7 @@
 # MapAssist 过滤器
 
+A GUI drop items filter editor for MapAssist, it's easy to change to other language, now just for Chinese
+
 主要是用来修改MapAssist的掉落过滤文件的，GUI的版本，比手动改yaml方便多了
 
 
