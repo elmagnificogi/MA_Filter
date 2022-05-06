@@ -431,6 +431,9 @@ namespace MA_Filter
             }
             LootLogConfiguration.Load(file);
             sumRules = LootLogConfiguration.Filters;
+            label4.Text = "总规则数:" + sumRules.Count.ToString();
+            MessageBox.Show("已导入" + "总规则数:" + sumRules.Count.ToString());
+            label5.Text = "当前导入规则文件：" + Path.GetFileNameWithoutExtension(file);
         }
 
         private void comboBox11_SelectedIndexChanged(object sender, EventArgs e)
@@ -624,6 +627,63 @@ namespace MA_Filter
         private void button8_Click(object sender, EventArgs e)
         {
            resetUI();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Dictionary<Item, List<ItemFilter>> rules1 = new Dictionary<Item, List<ItemFilter>>();
+
+            Dictionary<Item, List<ItemFilter>> rules2 = new Dictionary<Item, List<ItemFilter>>();
+
+            string file = "";
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Multiselect = true;      //该值确定是否可以选择多个文件
+            dialog.Title = "请选择文件";     //弹窗的标题
+            dialog.InitialDirectory = Application.StartupPath;       //默认打开的文件夹的位置
+            dialog.Filter = "过滤文件(*.yaml)|*.yaml|所有文件(*.*)|*.*";       //筛选文件
+
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                file = dialog.FileName;
+                Debug.WriteLine(dialog.FileNames);
+            }
+            else
+            {
+                return;
+            }
+
+            if(dialog.FileNames.Length != 2)
+            {
+                MessageBox.Show("请选择2个文件进行合并");
+            }
+
+            LootLogConfiguration.Load(dialog.FileNames[0]);
+            rules1 = LootLogConfiguration.Filters;
+
+            LootLogConfiguration.Load(dialog.FileNames[1]);
+            rules2 = LootLogConfiguration.Filters;
+
+            foreach(var rule in rules1)
+            {
+                if(rules2.ContainsKey(rule.Key))
+                {
+                    rules2[rule.Key].AddRange(rule.Value);
+                }
+                else
+                {
+                    rules2.Add(rule.Key, rule.Value);
+                }
+            }
+            sumRules = rules2;
+            label4.Text = "总规则数:" + sumRules.Count.ToString();
+            MessageBox.Show("已合并" + "总规则数:" + sumRules.Count.ToString());
+            label5.Text = "当前导入规则文件：" + Path.GetFileNameWithoutExtension(dialog.FileNames[0])+
+                " + " + Path.GetFileNameWithoutExtension(dialog.FileNames[1]);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label4.Text = "总规则数:" + sumRules.Count.ToString();
         }
     }
 }
