@@ -127,6 +127,7 @@ namespace MA_Filter
                 comboBox9.Items.Add(item.Value);
             }
 
+            // add all global skill
             foreach (var item in Affix.SkillAffix)
             {
                 comboBox6.Items.Add(item.Key);
@@ -135,29 +136,31 @@ namespace MA_Filter
                 comboBox7.Items.Add(item.Key);
             }
 
-            // add all skill
+            // add all normal skill
             int count = 0;
-            foreach (var skill in Enum.GetValues(typeof(Skill)))
+            foreach(var skilltree in SkillExtensions.SkillTreeToSkillDict)
             {
-                if (skill.ToString().Equals(Skill.Unset.ToString()))
-                    continue;
-                if (skill.ToString().Equals(Skill.Any.ToString()))
-                    continue;
-
-                // translate skill is not enough,only 205,in fact is 210
-                string skillName = skill.ToString();
-                string localName = string.Concat(skillName.Select((x, j) => j > 0 && char.IsUpper(x) ? " " + x.ToString() : x.ToString()));
-                LocalizedObj chinese = Affix.LocalizedSkills.FirstOrDefault(x => x.Value.enUS.Equals(localName)).Value;
-                if (chinese != null)
+                foreach(var skill in skilltree.Value)
                 {
-                    Debug.WriteLine(chinese.zhTW);
-                    count++;
-                    comboBox6.Items.Add(chinese.zhTW);
-                    comboBox3.Items.Add(chinese.zhTW);
-                    comboBox5.Items.Add(chinese.zhTW);
-                    comboBox7.Items.Add(chinese.zhTW);
-                    comboBox10.Items.Add(chinese.zhTW);
-                    Affix.SkillAffix.Add(chinese.zhTW, skillName);
+                    // translate skill is not enough,only 205,in fact is 210
+                    string skillName = skill.ToString();
+                    string localName = string.Concat(skillName.Select((x, j) => j > 0 && char.IsUpper(x) ? " " + x.ToString() : x.ToString()));
+                    LocalizedObj chinese = Affix.LocalizedSkills.FirstOrDefault(x => x.Value.enUS.Equals(localName)).Value;
+                    if (chinese != null)
+                    {
+                        Debug.WriteLine(chinese.zhTW);
+                        count++;
+                        comboBox6.Items.Add(chinese.zhTW);
+                        comboBox3.Items.Add(chinese.zhTW);
+                        comboBox5.Items.Add(chinese.zhTW);
+                        comboBox7.Items.Add(chinese.zhTW);
+                        comboBox10.Items.Add(chinese.zhTW);
+                        Affix.SkillAffix.Add(chinese.zhTW, skillName);
+                    }
+                    else
+                    {
+                        Debug.WriteLine(localName);
+                    }
                 }
             }
             Debug.WriteLine(count);
