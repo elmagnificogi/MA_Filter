@@ -267,7 +267,7 @@ namespace MA_Filter
                 for (int i = 0; i < checkedListBox1.Items.Count; i++)
                 {
                     if (checkedListBox1.GetItemChecked(i))
-                        curItemFilter.Qualities[index++] = (ItemQuality)(i +2);
+                        curItemFilter.Qualities[index++] = (ItemQuality)(i +1);
                 }
             }
 
@@ -467,7 +467,7 @@ namespace MA_Filter
                 checkBox3.Checked = true;
                 foreach (var s in curItemFilter.Qualities)
                 {
-                    checkedListBox1.SetItemChecked((int)(s) - 2,true);
+                    checkedListBox1.SetItemChecked((int)(s) - 1,true);
                 }
             }
 

@@ -378,13 +378,13 @@
             this.checkedListBox1.CheckOnClick = true;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
+            "劣质",
             "白",
             "特等",
             "蓝",
             "绿",
             "黄",
-            "暗金",
-            "手工"});
+            "暗金"});
             this.checkedListBox1.Location = new System.Drawing.Point(226, 67);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(120, 116);
