@@ -697,7 +697,10 @@
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "物品过滤V1.0-QQ群941746977";
             this.Load += new System.EventHandler(this.Form1_Load);
