@@ -79,6 +79,7 @@ namespace MA_Filter
             ["野蛮人_全技能"] = "Barbarian",
             ["德鲁伊_全技能"] = "Druid",
             ["刺客_全技能"] = "Assassin",
+            ["任意职业_全技能"] = "Any_C",
             ["亚-弓與弩"] = "AmazonBowAndCrossbow",
             ["亚-被動與魔法"] = "AmazonPassiveAndMagic",
             ["亚-標槍與長矛"] = "AmazonJavelinAndSpear",
@@ -100,6 +101,8 @@ namespace MA_Filter
             ["刺-陷阱"] = "AssassinTraps",
             ["刺-暗影修行"] = "AssassinShadowDisciplines",
             ["刺-武學技藝"] = "AssassinMartialArts",
+            ["任意职业-专精"] = "Any_T",
+            ["任意技能"] = "Any_S",
         };
 
         public static Dictionary<string, LocalizedObj> LocalizedSkills= new Dictionary<string, LocalizedObj>();
