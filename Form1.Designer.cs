@@ -82,6 +82,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label5 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -334,7 +344,7 @@
             "暗金"});
             this.checkedListBox1.Location = new System.Drawing.Point(226, 67);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 116);
+            this.checkedListBox1.Size = new System.Drawing.Size(96, 116);
             this.checkedListBox1.TabIndex = 57;
             // 
             // checkedListBox2
@@ -351,7 +361,7 @@
             "6"});
             this.checkedListBox2.Location = new System.Drawing.Point(420, 67);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(120, 116);
+            this.checkedListBox2.Size = new System.Drawing.Size(101, 116);
             this.checkedListBox2.TabIndex = 58;
             // 
             // comboBox2
@@ -586,11 +596,108 @@
             this.label5.TabIndex = 88;
             this.label5.Text = "当前导入规则文件：";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkedListBox3);
+            this.groupBox1.Controls.Add(this.checkBox13);
+            this.groupBox1.Controls.Add(this.button6);
+            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.button10);
+            this.groupBox1.Controls.Add(this.comboBox12);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.checkBox12);
+            this.groupBox1.Location = new System.Drawing.Point(546, 67);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(175, 300);
+            this.groupBox1.TabIndex = 89;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "物品种类过滤";
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(9, 20);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(120, 16);
+            this.checkBox12.TabIndex = 57;
+            this.checkBox12.Text = "使用物品种类过滤";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Location = new System.Drawing.Point(70, 42);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(99, 20);
+            this.comboBox12.TabIndex = 59;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(11, 46);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 12);
+            this.label6.TabIndex = 58;
+            this.label6.Text = "过滤规则";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(9, 93);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 62;
+            this.button6.Text = "删除";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(89, 68);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 61;
+            this.button7.Text = "保存";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(8, 68);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 60;
+            this.button10.Text = "添加新规则";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // checkedListBox3
+            // 
+            this.checkedListBox3.CheckOnClick = true;
+            this.checkedListBox3.FormattingEnabled = true;
+            this.checkedListBox3.Items.AddRange(new object[] {
+            "普通",
+            "扩展",
+            "精华"});
+            this.checkedListBox3.Location = new System.Drawing.Point(62, 139);
+            this.checkedListBox3.Name = "checkedListBox3";
+            this.checkedListBox3.Size = new System.Drawing.Size(107, 52);
+            this.checkedListBox3.TabIndex = 64;
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Location = new System.Drawing.Point(9, 140);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(48, 16);
+            this.checkBox13.TabIndex = 63;
+            this.checkBox13.Text = "等级";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(727, 439);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button9);
@@ -649,6 +756,8 @@
             this.Name = "Form1";
             this.Text = "物品过滤V1.0-QQ群941746977";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -708,6 +817,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckedListBox checkedListBox3;
+        private System.Windows.Forms.CheckBox checkBox13;
     }
 }
 

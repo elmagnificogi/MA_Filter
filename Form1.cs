@@ -719,5 +719,9 @@ namespace MA_Filter
                 }
             }
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
