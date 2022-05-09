@@ -614,17 +614,6 @@ namespace MA_Filter
             }
         }
 
-        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar != '\b')//这是允许输入退格键
-            {
-                if ((e.KeyChar < '0') || (e.KeyChar > '9'))//这是允许输入0-9数字
-                {
-                    e.Handled = true;
-                }
-            }
-        }
-
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar != '\b')//这是允许输入退格键
@@ -696,6 +685,39 @@ namespace MA_Filter
         private void timer1_Tick(object sender, EventArgs e)
         {
             label4.Text = "总规则数:" + sumRules.Count.ToString();
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')//这是允许输入退格键
+            {
+                if ((e.KeyChar < '0') || (e.KeyChar > '9'))//这是允许输入0-9数字
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')//这是允许输入退格键
+            {
+                if ((e.KeyChar < '0') || (e.KeyChar > '9'))//这是允许输入0-9数字
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')//这是允许输入退格键
+            {
+                if ((e.KeyChar < '0') || (e.KeyChar > '9'))//这是允许输入0-9数字
+                {
+                    e.Handled = true;
+                }
+            }
         }
     }
 }

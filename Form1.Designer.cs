@@ -54,11 +54,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
@@ -315,54 +310,6 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // listBox2
-            // 
-            this.listBox2.Enabled = false;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 12;
-            this.listBox2.Location = new System.Drawing.Point(559, 114);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(150, 256);
-            this.listBox2.TabIndex = 50;
-            // 
-            // button6
-            // 
-            this.button6.Enabled = false;
-            this.button6.Location = new System.Drawing.Point(559, 80);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 51;
-            this.button6.Text = "保存为模板";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Enabled = false;
-            this.button7.Location = new System.Drawing.Point(640, 80);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(69, 23);
-            this.button7.TabIndex = 52;
-            this.button7.Text = "删除";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Enabled = false;
-            this.label20.Location = new System.Drawing.Point(558, 60);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 12);
-            this.label20.TabIndex = 54;
-            this.label20.Text = "模板名称";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(614, 55);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(95, 21);
-            this.textBox8.TabIndex = 53;
-            // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
@@ -443,6 +390,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(59, 21);
             this.textBox4.TabIndex = 63;
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // comboBox3
             // 
@@ -468,6 +416,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(59, 21);
             this.textBox7.TabIndex = 67;
+            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
             // 
             // comboBox5
             // 
@@ -493,6 +442,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(59, 21);
             this.textBox6.TabIndex = 71;
+            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
             // 
             // comboBox7
             // 
@@ -668,11 +618,6 @@
             this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.textBox5);
@@ -735,11 +680,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
