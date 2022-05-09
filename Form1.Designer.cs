@@ -91,6 +91,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -598,6 +599,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.checkedListBox3);
             this.groupBox1.Controls.Add(this.checkBox13);
             this.groupBox1.Controls.Add(this.button6);
@@ -631,6 +633,7 @@
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(99, 20);
             this.comboBox12.TabIndex = 59;
+            this.comboBox12.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -643,25 +646,27 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(9, 93);
+            this.button6.Location = new System.Drawing.Point(89, 97);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 62;
             this.button6.Text = "删除";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(89, 68);
+            this.button7.Location = new System.Drawing.Point(9, 97);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 61;
             this.button7.Text = "保存";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(8, 68);
+            this.button10.Location = new System.Drawing.Point(89, 68);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 60;
@@ -691,6 +696,15 @@
             this.checkBox13.TabIndex = 63;
             this.checkBox13.Text = "等级";
             this.checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(11, 73);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(65, 12);
+            this.label9.TabIndex = 65;
+            this.label9.Text = "规则个数：";
             // 
             // Form1
             // 
@@ -826,6 +840,7 @@
         private System.Windows.Forms.CheckBox checkBox12;
         private System.Windows.Forms.CheckedListBox checkedListBox3;
         private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.Label label9;
     }
 }
 

@@ -24,6 +24,7 @@ namespace MA_Filter
         //List<ItemFilter> rules = new List<ItemFilter>();
         Dictionary<Item, List<ItemFilter>> sumRules = new Dictionary<Item, List<ItemFilter>>();
         Item curSelectItem = new Item();
+        Item curSelectClassItem = new Item();
         List<ItemFilter> curItemFilters = new List<ItemFilter>();
         ItemFilter curItemFilter = new ItemFilter();
 
@@ -171,15 +172,13 @@ namespace MA_Filter
         {
             listBox1.Items.Clear();
             Item curItem = Items.ItemClassesToChinese.First(q => q.Value == comboBox1.SelectedItem.ToString()).Key;
-
-            //// add a global filter
-            //if(curItem < Item.ClassRings)
-            //{
-            //    listBox1.Items.Add(curItem);
-            //}
+            if (curItem < Item.ClassRings)
+                curSelectClassItem = curItem;
+            else
+                curSelectClassItem = Item.xBases;
 
             Item[] items = Items.ItemClasses[curItem];
-            foreach(var item in items)
+            foreach (var item in items)
             {
                 string key = Items._ItemCodes[(uint)item];
 
@@ -722,6 +721,45 @@ namespace MA_Filter
 
         private void button10_Click(object sender, EventArgs e)
         {
+            // add new clas filter
+
+        }
+
+        private void comboBox12_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // change class filter
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            // save class filter
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            // delete class filter
+            if (comboBox12.SelectedIndex == -1)
+            {
+                MessageBox.Show("请先选择规则");
+                return;
+            }
+
+            if (comboBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("先选择物品种类");
+                return;
+            }
+
+            curItemFilters.RemoveAt(comboBox12.SelectedIndex);
+            if (curItemFilters.Count == 0)
+                sumRules.Remove(curSelectItem);
+            else
+                sumRules[curSelectItem] = curItemFilters;
+
+            comboBox12.Items.RemoveAt(comboBox12.SelectedIndex);
+            label9.Text = "规则个数：" + curItemFilters.Count;
         }
     }
 }
