@@ -381,6 +381,9 @@ namespace MA_Filter
                 {
                     // class skill
                     string name = Affix.SkillAffix.First(q => q.Key == comboBox.SelectedItem.ToString()).Value;
+                    if (name.Equals("Any_C"))
+                        name = "Any";
+
                     PlayerClass playerClass = (PlayerClass)Enum.Parse(typeof(PlayerClass), name);
                     itemFilter.ClassSkills.Add(playerClass, int.Parse(textBox.Text));
                 }
@@ -388,6 +391,9 @@ namespace MA_Filter
                 {
                     // skill tree
                     string name = Affix.SkillAffix.First(q => q.Key == comboBox.SelectedItem.ToString()).Value;
+                    if (name.Equals("Any_T"))
+                        name = "Any";
+
                     SkillTree playerClass = (SkillTree)Enum.Parse(typeof(SkillTree), name);
                     itemFilter.SkillTrees.Add(playerClass, int.Parse(textBox.Text));
                 }
@@ -396,6 +402,9 @@ namespace MA_Filter
                     // normal skill
                     // skill tree
                     string name = Affix.SkillAffix.First(q => q.Key == comboBox.SelectedItem.ToString()).Value;
+                    if (name.Equals("Any_S"))
+                        name = "Any";
+
                     Skill playerClass = (Skill)Enum.Parse(typeof(Skill), name);
                     itemFilter.Skills.Add(playerClass, int.Parse(textBox.Text));
                 }
@@ -1064,10 +1073,12 @@ namespace MA_Filter
             if(checkBox12.Checked)
             {
                 listBox1.Enabled = false;
+                checkBox13.Checked = true;
             }
             else
             {
                 listBox1.Enabled = true;
+                checkBox13.Checked = false;
             }
         }
     }

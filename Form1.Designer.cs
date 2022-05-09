@@ -580,7 +580,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 12);
             this.label4.TabIndex = 87;
-            this.label4.Text = "总规则数：";
+            this.label4.Text = "总过滤数：";
             // 
             // timer1
             // 
