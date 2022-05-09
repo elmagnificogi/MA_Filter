@@ -515,21 +515,33 @@ namespace MA_Filter
             count = 0;
             foreach (var affix in curItemFilter.ClassSkills)
             {
-                affix_combox[count].SelectedIndex = comboBox6.Items.IndexOf(Affix.SkillAffix.First(x => x.Value.Equals(affix.Key.ToString())).Key.ToString());//;
+                string key = affix.Key.ToString();
+                if (key.Equals("Any"))
+                    key = key+"_C";
+
+                affix_combox[count].SelectedIndex = comboBox6.Items.IndexOf(Affix.SkillAffix.First(x => x.Value.Equals(key)).Key.ToString());
                 affix_combox_value[count].Text = affix.Value.ToString();
                 affix_check[count++].Checked = true;
             }
 
             foreach (var affix in curItemFilter.SkillTrees)
             {
-                affix_combox[count].SelectedIndex = comboBox6.Items.IndexOf(Affix.SkillAffix.First(x => x.Value.Equals(affix.Key.ToString())).Key.ToString());//;
+                string key = affix.Key.ToString();
+                if (key.Equals("Any"))
+                    key += "_T";
+
+                affix_combox[count].SelectedIndex = comboBox6.Items.IndexOf(Affix.SkillAffix.First(x => x.Value.Equals(key)).Key.ToString());//;
                 affix_combox_value[count].Text = affix.Value.ToString();
                 affix_check[count++].Checked = true;
             }
 
             foreach (var affix in curItemFilter.Skills)
             {
-                affix_combox[count].SelectedIndex = comboBox6.Items.IndexOf(Affix.SkillAffix.First(x => x.Value.Equals(affix.Key.ToString())).Key.ToString());//;
+                string key = affix.Key.ToString();
+                if (key.Equals("Any"))
+                    key += "_S";
+
+                affix_combox[count].SelectedIndex = comboBox6.Items.IndexOf(Affix.SkillAffix.First(x => x.Value.Equals(key)).Key.ToString());//;
                 affix_combox_value[count].Text = affix.Value.ToString();
                 affix_check[count++].Checked = true;
             }
