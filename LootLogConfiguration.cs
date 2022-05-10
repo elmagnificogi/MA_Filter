@@ -15,44 +15,45 @@ namespace MapAssist.Settings
         {
             Filters = ConfigurationParser<Dictionary<Item, List<ItemFilter>>>.ParseConfigurationFile(file);
 
-            for (var itemClass = Item.ClassAxes; ; itemClass += 1)
-            {
-                if (!Enum.IsDefined(typeof(Item), itemClass)) break;
-                if (!Filters.ContainsKey(itemClass)) continue;
+            //for (var itemClass = Item.ClassAxes; ; itemClass += 1)
+            //{
+            //    if (!Enum.IsDefined(typeof(Item), itemClass)) break;
+            //    if (!Filters.ContainsKey(itemClass)) continue;
 
-                Action<ItemFilter> assignRule = (rule) =>
-                {
-                    var classItems = Items.ItemClasses[itemClass].Where(item => itemClass == Item.ClassCirclets || rule == null || rule.Tiers == null || rule.Tiers.Contains(Items.GetItemTier(item))).ToArray();
+            //    Action<ItemFilter> assignRule = (rule) =>
+            //    {
+            //        //var classItems = Items.ItemClasses[itemClass].Where(item => itemClass == Item.ClassCirclets || rule == null || rule.Tiers == null || rule.Tiers.Contains(Items.GetItemTier(item))).ToArray();
+            //        //Filters[itemClass].Add(rule);
+            //        //Filters.Add(itemClass, new List<ItemFilter> { rule });
+            //        //foreach (var item in classItems)
+            //        //{
+            //        //    if (Filters.ContainsKey(item) && Filters[item] == null) continue; // null rule so everything is already being returned
 
-                    foreach (var item in classItems)
-                    {
-                        if (Filters.ContainsKey(item) && Filters[item] == null) continue; // null rule so everything is already being returned
+            //        //    if (Filters.ContainsKey(item))
+            //        //    {
+            //        //        if (rule == null) Filters[item] = null; // replace with a null rule
+            //        //        else Filters[item].Add(rule);
+            //        //    }
+            //        //    else
+            //        //    {
+            //        //        if (rule == null) Filters.Add(item, null);
+            //        //        else Filters.Add(item, new List<ItemFilter> { rule });
+            //        //    }
+            //        //}
+            //    };
 
-                        if (Filters.ContainsKey(item))
-                        {
-                            if (rule == null) Filters[item] = null; // replace with a null rule
-                            else Filters[item].Add(rule);
-                        }
-                        else
-                        {
-                            if (rule == null) Filters.Add(item, null);
-                            else Filters.Add(item, new List<ItemFilter> { rule });
-                        }
-                    }
-                };
-
-                if (Filters[itemClass] == null)
-                {
-                    assignRule(null);
-                }
-                else
-                {
-                    foreach (var rule in Filters[itemClass])
-                    {
-                        assignRule(rule);
-                    }
-                }
-            }
+            //    if (Filters[itemClass] == null)
+            //    {
+            //        assignRule(null);
+            //    }
+            //    else
+            //    {
+            //        foreach (var rule in Filters[itemClass])
+            //        {
+            //            assignRule(rule);
+            //        }
+            //    }
+            //}
 
             // Validation for Enhanced Damage
             foreach (var item in Filters.Where(kv => kv.Value != null && kv.Value.Exists(x => x.EnhancedDamage != null)))
