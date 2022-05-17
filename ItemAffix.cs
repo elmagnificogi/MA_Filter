@@ -68,6 +68,8 @@ namespace MA_Filter
                ["MaxAreaLevel"                   ]="最大地区等级",
                ["MinPlayerLevel"                 ]="最小玩家等级",
                ["MaxPlayerLevel"                 ]="最大玩家等级",
+               ["MinQualityLevel"] = "最小质量",
+               ["MaxQualityLevel"] = "最大质量",
         };
 
         static public Dictionary<string, string> SkillAffix = new Dictionary<string, string>()
