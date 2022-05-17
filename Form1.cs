@@ -600,6 +600,10 @@ namespace MA_Filter
                 sumRules[curSelectItem] = curItemFilters;
 
             comboBox11.Items.RemoveAt(comboBox11.SelectedIndex);
+            for (int i = 0; i < comboBox11.Items.Count; i++)
+            {
+                comboBox11.Items[i] = (i + 1).ToString();
+            }
             label2.Text = "规则个数：" + curItemFilters.Count;
         }
 
@@ -916,7 +920,7 @@ namespace MA_Filter
             {
                 if (checkedListBox3.CheckedItems.Count == 0)
                 {
-                    MessageBox.Show("必须选一个物品等级");
+                    MessageBox.Show("必须选一个物品级别");
                     return;
                 }
                 curItemFilter.Tiers = new ItemTier[checkedListBox3.CheckedItems.Count];
@@ -926,6 +930,11 @@ namespace MA_Filter
                     if (checkedListBox3.GetItemChecked(i))
                         curItemFilter.Tiers[index++] = (ItemTier)i;
                 }
+            }
+            else
+            {
+                MessageBox.Show("必须设置物品级别");
+                return;
             }
 
             if (checkBox1.Checked)
@@ -1060,11 +1069,16 @@ namespace MA_Filter
 
             curClassFilters.RemoveAt(comboBox12.SelectedIndex);
             if (curClassFilters.Count == 0)
-                sumRules.Remove(curSelectItem);
+                sumRules.Remove(curSelectClassItem);
             else
-                sumRules[curSelectItem] = curClassFilters;
+                sumRules[curSelectClassItem] = curClassFilters;
 
             comboBox12.Items.RemoveAt(comboBox12.SelectedIndex);
+            for(int i=0;i<comboBox12.Items.Count;i++)
+            {
+                comboBox12.Items[i] = (i+1).ToString();
+            }
+
             label9.Text = "规则个数：" + curClassFilters.Count;
         }
 
