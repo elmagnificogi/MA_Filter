@@ -193,6 +193,13 @@ namespace MA_Filter
             Item[] items = Items.ItemClasses[curItem];
             foreach (var item in items)
             {
+                /* it's a bug that Classboots name is same as boots 
+                 * but MapAssit author wouldnt change it
+                 * so have to jump the boots item
+                 * https://github.com/OneXDeveloper/MapAssist/issues/479
+                 */
+                if (item == Item.Boots) continue;
+
                 string key = Items._ItemCodes[(uint)item];
 
                 listBox1.Items.Add(Items.LocalizedItems[key].zhTW);
