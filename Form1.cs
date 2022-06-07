@@ -289,6 +289,15 @@ namespace MA_Filter
                 }
             }
 
+            if (checkBox14.Checked)
+            {
+                curItemFilter.CheckVendor = true;
+            }
+            else
+            {
+                curItemFilter.CheckVendor = false;
+            }
+
             if (checkBox3.Checked)
             {
                 if(checkedListBox1.CheckedItems.Count==0)
@@ -480,6 +489,15 @@ namespace MA_Filter
                     comboBox2.SelectedIndex = 1;
                 else
                     comboBox2.SelectedIndex = 0;
+            }
+
+            if(curItemFilter.CheckVendor)
+            {
+                checkBox14.Checked = true;
+            }
+            else
+            {
+                checkBox14.Checked = false;
             }
 
             if (curItemFilter?.Sockets?.Length > 0)
@@ -797,6 +815,15 @@ namespace MA_Filter
                     comboBox2.SelectedIndex = 0;
             }
 
+            if (curItemFilter.CheckVendor)
+            {
+                checkBox14.Checked = true;
+            }
+            else
+            {
+                checkBox14.Checked = false;
+            }
+
             if (curItemFilter?.Tiers?.Length > 0)
             {
                 checkBox13.Checked = true;
@@ -955,6 +982,15 @@ namespace MA_Filter
                     curItemFilter.Ethereal = false;
                 if (comboBox2.SelectedIndex == 1)
                     curItemFilter.Ethereal = true;
+            }
+
+            if (checkBox14.Checked)
+            {
+                curItemFilter.CheckVendor = true;
+            }
+            else
+            {
+                curItemFilter.CheckVendor = false;
             }
 
             if (checkBox2.Checked)
