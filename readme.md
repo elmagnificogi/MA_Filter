@@ -89,7 +89,7 @@ https://www.bilibili.com/video/BV1R44y1u79x?share_source=copy_web
 
 **地面掉落物，只有在未鉴定的情况能看到的属性，才能被过滤提示，鉴定以后的属性是没办法通过过滤提前知道的。**
 
-商店物品，只有在`MapAssist下`勾选了过滤商店功能才能生效，**商店物品能过滤的前提是至少具有一个词条或者技能过滤条件**，只是简单的品质过滤和孔数过滤是不会显示商店内物品的，**商店过滤需要对话显示交易框才行**
+商店物品，只有在`MapAssist下`勾选了过滤商店功能才能生效并且过滤规则中启用了商店过滤，**商店过滤需要对话显示交易框才行**
 
 已鉴定物品，同商店物品。
 
@@ -130,6 +130,17 @@ https://www.bilibili.com/video/BV1R44y1u79x?share_source=copy_web
 ![image-20220510104251776](http://img.elmagnifico.tech:9514/static/upload/elmagnifico/image-20220510104251776.png)
 
 - 种类过滤适合职业类装备或者某一个大类全都需要的情况下进行局部过滤
+
+
+
+#### 商店过滤
+
+只有当以下2条同时生效时，商店过滤才起作用，勾选了检测商店，地面掉落也是检测的
+
+- MapAssist中勾选了过滤商店
+- 过滤规则中勾选了检测商店
+
+![image-20220608132331568](http://img.elmagnifico.tech:9514/static/upload/elmagnifico/202206081323656.png)
 
 
 
