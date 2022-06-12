@@ -436,7 +436,10 @@ namespace MA_Filter
             Item curItem;
             Item curClass;
             curClass = Items.ItemClassesToChinese.First(q => q.Value == comboBox1.SelectedItem.ToString()).Key;
-            curItem = Items.ItemClasses[curClass][listBox1.SelectedIndex];
+            if(curClass == Item.ClassBoots)
+                curItem = Items.ItemClasses[curClass][listBox1.SelectedIndex+1];
+            else
+                curItem = Items.ItemClasses[curClass][listBox1.SelectedIndex];
 
             curSelectItem = curItem;
             if (sumRules.ContainsKey(curSelectItem))
