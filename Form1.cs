@@ -118,7 +118,7 @@ namespace MA_Filter
             yamlSerializer.Serialize(yamlWriter, sumRules);
             yamlWriter.Close();
 
-            MessageBox.Show("导出成功，请替换MapAssist文件夹下的ItemFilter.yaml，并重启MapAssist验证");
+            MessageBox.Show("导出成功，请替换Wakuwaku文件夹下的ItemFilter.yaml，并重启Wakuwaku验证");
         }
 
         private void Form1_Load(object sender, EventArgs e)

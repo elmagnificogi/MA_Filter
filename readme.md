@@ -1,8 +1,8 @@
-# MapAssist 过滤器
+# Wakuwaku/MapAssist 过滤器
 
-A GUI drop items filter editor for MapAssist, it's easy to change to other language, now just for Chinese
+A GUI drop items filter editor for MapAssist or Wakuwaku, it's easy to change to other language, now just for Chinese
 
-主要是用来修改MapAssist的掉落过滤文件的，GUI的版本，比手动改yaml方便多了，原始版本MapAssist的自带过滤只是一个示例参考，实际没什么用，目前我的MapAssist已经继承了最新的基础过滤
+主要是用来修改Wakuwaku或MapAssist 的掉落过滤文件的，GUI的版本，比手动改yaml方便多了，原始版本MapAssist的自带过滤只是一个示例参考，实际没什么用，目前我的Wakuwaku已经继承了最新的基础过滤
 
 
 
@@ -12,15 +12,15 @@ A GUI drop items filter editor for MapAssist, it's easy to change to other langu
 
 
 
-MapAssist 原项目
+~~MapAssist 原项目~~(已废弃)
 
-> https://github.com/OneXDeveloper/MapAssist
+> ~~https://github.com/OneXDeveloper/MapAssist~~
 
 
 
-MapAssist 中文版
+~~MapAssist 中文版~~(已废弃，继承者是Wakuwaku)
 
-> https://github.com/elmagnificogi/MapAssist
+> ~~https://github.com/elmagnificogi/MapAssist~~
 
 
 
@@ -80,7 +80,7 @@ https://www.bilibili.com/video/BV1R44y1u79x?share_source=copy_web
 
 - 每一种物品都可以创建一个过滤
 - 一个过滤中含有若干个规则
-- 生成的过滤文件，需要替换原本`MapAssist下`的`ItemFilter.yaml`，并且重启`MapAssist`才能生效
+- 生成的过滤文件，需要替换原本`Wakuwaku下`的`ItemFilter.yaml`，并且重启`Wakuwaku`才能生效
 - 多个`ItemFilter.yaml`可以通过合并，来将其他人的规则合并到一起，然后再导出使用
 
 
@@ -89,7 +89,7 @@ https://www.bilibili.com/video/BV1R44y1u79x?share_source=copy_web
 
 **地面掉落物，只有在未鉴定的情况能看到的属性，才能被过滤提示，鉴定以后的属性是没办法通过过滤提前知道的。**
 
-商店物品，只有在`MapAssist下`勾选了过滤商店功能才能生效并且过滤规则中启用了商店过滤，**商店过滤需要对话显示交易框才行**
+商店物品，只有在`Wakuwaku下`勾选了过滤商店功能才能生效并且过滤规则中启用了商店过滤，**商店过滤需要对话显示交易框才行**
 
 已鉴定物品，同商店物品。
 
@@ -117,7 +117,7 @@ https://www.bilibili.com/video/BV1R44y1u79x?share_source=copy_web
 
 剩下就看你对物品的熟悉程度，来应用各种条件的过滤了。当所有过滤都修改或者设置完了，那就导出就行了，会有对应的提示，按操作执行就行了。
 
-![image-20220507160808897](http://img.elmagnifico.tech:9514/static/upload/elmagnifico/202205071608935.png)
+![image-20220620162554101](http://img.elmagnifico.tech:9514/static/upload/elmagnifico/202206201626203.png)
 
 
 
@@ -172,7 +172,7 @@ https://www.bilibili.com/video/BV1R44y1u79x?share_source=copy_web
 
 ## 快速使用
 
-直接下别人下好的，比如群里，这都是经过验证的，替换，并且重启`MapAssist`生效，进游戏刷就是了。
+直接下别人下好的，比如群里，这都是经过验证的，替换，并且重启`Wakuwaku`生效，进游戏刷就是了。
 
 
 
